@@ -1,0 +1,20 @@
+{
+  "name": "Jiangtao",
+  "short_name": "Jiangtao",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "100x100",
+      "type": "image/png"
+    },
+    {
+      "src": "/sanzang.jpg",
+      "sizes": "500x500",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#3eaf7c"
+}
