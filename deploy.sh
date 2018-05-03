@@ -24,6 +24,9 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
 
 # 如果发布到 https://hustjiangtao.github.io/vuepress
-git push -f git@github.com:hustjiangtao/vuepress.git master:gh-pages
+# git push -f git@github.com:hustjiangtao/vuepress.git master:gh-pages
+
+# 如果发布到 https://github.com/hustjiangtao/hujiangtao.cn.git
+git push -f git@github.com:hustjiangtao/hujiangtao.cn.git master:gh-pages
 
 cd -
