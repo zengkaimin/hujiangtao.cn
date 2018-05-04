@@ -130,7 +130,6 @@ module.exports = {
                             collapsable: true,
                             children: [
                                 'Python/2017-01-19-一个Python简单项目框架的建立流程',
-                                'Python/2017-01-19-一个Python简单项目框架的建立流程',
                                 'Python/2017-11-24-Python项目生成requirements_txt',
                                 'Python/2017-12-14-Python实现定时任务初步探索',
                                 'Python/2018-01-23-Python项目架构的思考',
