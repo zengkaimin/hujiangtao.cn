@@ -11,7 +11,9 @@ sidebarDepth: 0
 Python-Tornado服务器后台跨域设置的一个示例-->
 
 在BaseWebsiteHandler中重写tornado.web.RequestHandler时候，在initialize方法中添加如下代码：
+
 * 允许所有域的请求
+
 ```python
 # TODO 上线前的测试用，上线时移除或修改
 self.set_header('Access-Control-Allow-Methods', 'POST, DELETE, PUT, GET, OPTIONS')  设置允许请求的方法
@@ -25,6 +27,7 @@ self.set_header(
 ```
 
 * 允许指定域的请求
+
 ```python
 # TODO 上线前的测试用，上线时移除或修改
 allow_origin = [
@@ -42,6 +45,3 @@ self.set_header(
     'Origin, X-Requested-With, Content-Type, Accept, client_id, uuid, Authorization'
 )
 ```
-
-
-

@@ -8,6 +8,7 @@ sidebarDepth: 0
 # Mac 安装 Python 开发环境依赖
 
 ---
+
 ## 关闭macos的安全模式
 
 ```bash
@@ -49,7 +50,7 @@ $ mkdir ~/.pip & vim ~/.pip/pip.conf
 
 添加如下内容：
 
-```text
+```
 [global]
 index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 ```
@@ -63,7 +64,7 @@ $ sudo pip install -r requirements.txt
 
 requirements.txt可以自行创建，内容如下：
 
-```text
+```
 # requirements.txt
 altgraph==0.10.2
 arcade==1.3.0
@@ -186,7 +187,7 @@ pip install m2crypto
 
     添加如下内容：
 
-    ```text
+    ```
     export CC=gcc
     export CXX=g++
     ```

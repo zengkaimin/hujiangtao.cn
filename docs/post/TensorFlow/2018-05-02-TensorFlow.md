@@ -30,7 +30,9 @@ $ virtualenv --system-site-packages -p python3 ~/Desktop/tensorflow
 $ cd ~/Desktop/tensorflow
 $ source ./bin/activate  # If using bash, sh, ksh, or zsh
 ```
+
 激活之后就变成了：
+
 ```bash
 (tensorflow)$
 ```
@@ -71,6 +73,7 @@ b'hello, master jiangtao'
 ```
 
 - Reference
+
  1. [在 macOS 上安装 TensorFlow](https://www.tensorflow.org/install/install_mac?hl=zh-cn)
 
 ## 安装 Pandas
@@ -84,11 +87,13 @@ b'hello, master jiangtao'
 ## 获取示例程序
 
 - 克隆 TensorFlow 模型代码库
+
 ```bash
 $ git clone https://github.com/tensorflow/models
 ```
 
 - 运行示例程序
+
 ```bash
 $ cd models/samples/core/get_started/
 $ python premade_estimator.py
