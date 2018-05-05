@@ -2,7 +2,6 @@
 title: Python项目生成requirements
 date: 2017-11-24
 description: Python项目生成requirements
-sidebarDepth: 0
 ---
 
 # Python项目生成requirements.txt

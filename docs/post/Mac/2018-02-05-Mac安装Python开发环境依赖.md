@@ -2,7 +2,6 @@
 title: Mac安装Python开发环境依赖
 date: 2018-02-05
 description: Mac环境下安装Python开发环境依赖
-sidebarDepth: 0
 ---
 
 # Mac 安装 Python 开发环境依赖

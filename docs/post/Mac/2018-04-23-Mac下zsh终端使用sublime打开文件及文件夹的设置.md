@@ -2,7 +2,6 @@
 title: Mac下zsh终端使用sublime打开文件及文件夹的设置
 date: 2018-04-23
 description: Mac下zsh终端使用sublime打开文件及文件夹的设置
-sidebarDepth: 0
 ---
 
 ## Mac下zsh终端使用sublime打开文件及文件夹的设置

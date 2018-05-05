@@ -2,7 +2,6 @@
 title: Mac下Homebrew安装MySQL
 date: 2018-02-17
 description: Mac下Homebrew安装MySQL
-sidebarDepth: 0
 ---
 
 ## Mac下Homebrew安装MySQL

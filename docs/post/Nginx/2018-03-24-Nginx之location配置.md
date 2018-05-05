@@ -2,7 +2,6 @@
 title: Nginx之location配置
 date: 2018-03-24
 description: Nginx之location配置
-sidebarDepth: 0
 ---
 
 # Nginx之location配置

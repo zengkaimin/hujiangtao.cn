@@ -2,7 +2,6 @@
 title: 安装supervisor
 date: 2017-12-05
 description: 安装supervisor
-sidebarDepth: 0
 ---
 
 # 安装supervisor
