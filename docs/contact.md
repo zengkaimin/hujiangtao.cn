@@ -2,7 +2,10 @@
 sidebar: no
 ---
 
-# Contact Me
+# 🤟 Contact Me
 
-- :link: [www.hujiangtao.cn](http://www.hujiangtao.cn)
-- :email:: [jiangtao.work@gmail.com](mailto:jiangtao.work@gmail.com)
+:link: Homepage
+: [www.hujiangtao.cn](http://www.hujiangtao.cn)
+
+:email: Email
+: [jiangtao.work@gmail.com](mailto:jiangtao.work@gmail.com)

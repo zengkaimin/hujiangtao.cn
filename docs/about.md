@@ -2,10 +2,15 @@
 sidebar: no
 ---
 
-# About Me
+# :point_right: About Me
 
-- Graduated from [HUST](http://www.hust.edu.cn/) :tada:
-- Work @ [DIYIDAN](https://www.diyidan.com) :clap:
-- Location @ Shanghai :airplane:
+:mortar_board: Education
+: [Huazhong University of Science and Technology](http://www.hust.edu.cn/)
+
+:man:&zwj;:computer: Work
+: [DIYIDAN](https://www.diyidan.com)
+
+:round_pushpin: Location
+: [Shanghai]() · [China]()
 
 :earth_asia: :cn: :tada: :balloon: :smirk:

@@ -2,7 +2,7 @@
 * @Author: jiangtao
 * @Date:   2018-04-24 22:46:26
 * @Last Modified by:   jiangtao
-* @Last Modified time: 2018-05-05 23:17:05
+* @Last Modified time: 2018-05-06 21:53:49
 */
 
 const { join, basename, relative } = require('path');
@@ -129,5 +129,10 @@ module.exports = {
             }
         },
         sidebarDepth: 0,
+    },
+    markdown: {
+        config: md => {
+            md.use(require('markdown-it-deflist'))
+        }
     }
 }
