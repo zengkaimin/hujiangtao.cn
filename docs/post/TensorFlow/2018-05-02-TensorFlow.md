@@ -9,6 +9,10 @@ description: TensorFlow
 <!--# 简介
 采用 Virtualenv 环境安装-->
 
+## 目录
+
+[[toc]]
+
 ## 安装 TensorFlow
 
 - 安装虚拟环境
@@ -73,7 +77,7 @@ b'hello, master jiangtao'
 
 - Reference
 
- 1. [在 macOS 上安装 TensorFlow](https://www.tensorflow.org/install/install_mac?hl=zh-cn)
+    1. [在 macOS 上安装 TensorFlow](https://www.tensorflow.org/install/install_mac?hl=zh-cn)
 
 ## 安装 Pandas
 
@@ -99,4 +103,5 @@ $ python premade_estimator.py
 ```
 
 - Reference
-  1. [机器学习新手使用入门](https://www.tensorflow.org/get_started/get_started_for_beginners?hl=zh-cn)
+
+    1. [机器学习新手使用入门](https://www.tensorflow.org/get_started/get_started_for_beginners?hl=zh-cn)
