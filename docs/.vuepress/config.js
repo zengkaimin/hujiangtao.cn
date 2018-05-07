@@ -2,7 +2,7 @@
 * @Author: jiangtao
 * @Date:   2018-04-24 22:46:26
 * @Last Modified by:   jiangtao
-* @Last Modified time: 2018-05-06 21:53:49
+* @Last Modified time: 2018-05-07 17:36:45
 */
 
 const { join, basename, relative } = require('path');
@@ -106,24 +106,24 @@ module.exports = {
                 nav: [
                     {
                         text: '主页',
-                        link: '/'
+                        link: '/zh/index'
                     },
                     {
                         text: '文章',
-                        link: '/post/'
+                        link: '/zh/post/'
                     },
                     {
                         text: '关于',
-                        link: '/about'
+                        link: '/zh/about'
                     },
                     {
                         text: '联系我',
-                        link: '/contact'
+                        link: '/zh/contact'
                     },
                 ],
                 sidebar: {
                     '/zh/post/': [
-                        ...generateBlogSideBar('/post'),
+                        ...generateBlogSideBar('/zh/post'),
                         ],
                 },
             }
