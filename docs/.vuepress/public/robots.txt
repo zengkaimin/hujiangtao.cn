@@ -3,3 +3,5 @@ Disallow: /about.html
 Disallow: /contact.html
 Disallow: /zh/about.html
 Disallow: /zh/contact.html
+Disallow: /post/*.html
+Disallow: /zh/post/*.html
