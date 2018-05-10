@@ -1,5 +1,5 @@
 ---
-title: Nginx之location配置
+title: Nginx location settings
 date: 2018-03-24
 description: Nginx之location配置
 ---

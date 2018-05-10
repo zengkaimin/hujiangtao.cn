@@ -1,7 +1,7 @@
 ---
-title: Python项目架构的思考
+title: Thinking of Python project structure
 date: 2018-01-23
-description: Python项目架构的思考
+description: Thinking of Python project structure
 ---
 
 # Python项目架构的思考

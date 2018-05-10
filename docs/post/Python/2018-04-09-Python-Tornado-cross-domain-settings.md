@@ -1,7 +1,7 @@
 ---
-title: Python-Tornado服务器后台跨域设置示例
+title: Python-Tornado cross-domain settings
 date: 2018-04-09
-description: Python-Tornado服务器后台跨域设置示例
+description: Settings for cross-domain in Python-Tornado server
 ---
 
 # Python-Tornado服务器后台跨域设置示例

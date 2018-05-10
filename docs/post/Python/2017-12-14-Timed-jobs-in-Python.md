@@ -1,5 +1,5 @@
 ---
-title: Python实现定时任务的初步探索
+title: Timed jobs in Python
 date: 2017-12-14
 description: Python实现定时任务的初步探索
 ---

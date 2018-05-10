@@ -1,10 +1,10 @@
 ---
-title: Python进阶阅读
+title: Reading for Intermediate Python
 author: Jiangtao
 date: 2018-05-07
 description:
 ---
 
-# Python进阶阅读
+# Reading for Intermediate Python
 
 - [Python进阶 - GitBook](https://legacy.gitbook.com/book/eastlakeside/interpy-zh/details)

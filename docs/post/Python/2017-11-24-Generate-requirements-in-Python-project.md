@@ -1,5 +1,5 @@
 ---
-title: Python项目生成requirements
+title: Generate requirements in Python project
 date: 2017-11-24
 description: Python项目生成requirements
 ---

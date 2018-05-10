@@ -1,5 +1,5 @@
 ---
-title: MySQL优化
+title: High Performance MySQL
 date: 2018-04-19
 description: 一些MySQL优化案例和心得
 ---

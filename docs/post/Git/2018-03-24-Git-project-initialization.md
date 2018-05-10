@@ -1,5 +1,5 @@
 ---
-title: Git初始化项目流程
+title: Git project initialization
 date: 2018-03-24
 description: 初始化一个完整的Git新项目的简单流程记录
 ---

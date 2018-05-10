@@ -1,7 +1,7 @@
 ---
-title: 一个Python简单项目框架的建立流程
+title: Build a Python-Tornado project
 date: 2017-01-19
-description: 一个Python简单项目框架的建立流程
+description: A simple procedure for building Python project based Tornado
 ---
 
 # 一个Python简单项目框架的建立流程
