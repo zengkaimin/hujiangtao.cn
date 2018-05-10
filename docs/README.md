@@ -2,6 +2,6 @@
 home: true
 heroImage: /sanzang.jpg
 actionText: Take a Look
-actionLink: './post/'
+actionLink: '/post/'
 <!-- footer: MIT Licensed | Copyright © 2018-present Jiangtao -->
 ---
