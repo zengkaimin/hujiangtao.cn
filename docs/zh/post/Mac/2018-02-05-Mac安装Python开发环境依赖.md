@@ -6,7 +6,9 @@ description: Mac环境下安装Python开发环境依赖
 
 # Mac 安装 Python 开发环境依赖
 
-*请务必按照顺序执行一下步骤*
+::: danger
+*请务必按照顺序执行以下步骤*
+:::
 
 ## 目录
 
