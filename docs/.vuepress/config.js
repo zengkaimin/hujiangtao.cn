@@ -2,7 +2,7 @@
 * @Author: jiangtao
 * @Date:   2018-04-24 22:46:26
 * @Last Modified by:   jiangtao
-* @Last Modified time: 2018-05-14 21:44:17
+* @Last Modified time: 2018-05-15 00:02:36
 */
 
 const { join, basename, relative } = require('path');
@@ -137,8 +137,10 @@ module.exports = {
         }
     },
     markdown: {
+        lineNumbers: true,
         config: md => {
             md.use(require('markdown-it-deflist'))
+              .use(require('markdown-it-task-lists'))
         }
     }
 }
