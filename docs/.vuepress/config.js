@@ -2,7 +2,7 @@
 * @Author: jiangtao
 * @Date:   2018-04-24 22:46:26
 * @Last Modified by:   jiangtao
-* @Last Modified time: 2018-05-07 17:36:45
+* @Last Modified time: 2018-05-14 21:44:17
 */
 
 const { join, basename, relative } = require('path');
@@ -73,6 +73,7 @@ module.exports = {
                 label: 'English',
                 selectText: 'Languages',
                 // editLinkText: 'Edit this page',
+                lastUpdated: 'Last Updated',
                 nav: [
                     {
                         text: 'Home',
@@ -103,6 +104,7 @@ module.exports = {
                 label: '简体中文',
                 selectText: '选择语言',
                 // editLinkText: '编辑此页',
+                lastUpdated: '上次更新',
                 nav: [
                     {
                         text: '主页',
@@ -129,6 +131,10 @@ module.exports = {
             }
         },
         sidebarDepth: 0,
+        algolia: {
+            apiKey: '5eb22bc026c0550c84b1b1bd23ea2139',
+            indexName: 'hujiangtao'
+        }
     },
     markdown: {
         config: md => {
