@@ -12,10 +12,12 @@ description: 文章的简介
 ## TODO
 
 - [x] PWA
-- [x] Robots
-- [x] Sitemap
-- [ ] Google Analytics 集成
-- [x] Algolia 搜索
-- [ ] LastUpdated 最近更新
-- [ ] LineNumbers 代码块行号
+<!-- - [x] Robots -->
+<!-- - [x] Sitemap -->
+<!-- - [ ] Google Analytics 集成 -->
+<!-- - [x] Algolia 搜索 -->
+- [x] 全文搜索
+<!-- - [ ] LastUpdated 最近更新 -->
+<!-- - [ ] LineNumbers 代码块行号 -->
 - [ ] 多语言支持
+- [ ] Theme
