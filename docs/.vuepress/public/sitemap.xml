@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://www.hujiangtao.cn/</loc>
+  <lastmod>2018-05-11T01:43:02+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.hujiangtao.cn/post/</loc>
+  <lastmod>2018-05-11T01:43:02+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.hujiangtao.cn/zh/</loc>
+  <lastmod>2018-05-11T01:43:02+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.hujiangtao.cn/zh/post/</loc>
+  <lastmod>2018-05-11T01:43:02+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.hujiangtao.cn/post/TensorFlow/2018-05-02-TensorFlow.html</loc>
+  <lastmod>2018-05-11T01:43:02+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.hujiangtao.cn/zh/index.html</loc>
+  <lastmod>2018-05-11T01:43:02+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.hujiangtao.cn/post/Python/2018-05-07-Reading-for-Intermediate-Python.html</loc>
+  <lastmod>2018-05-11T01:43:02+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.hujiangtao.cn/post/Python/2018-04-09-Python-Tornado-cross-domain-settings.html</loc>
+  <lastmod>2018-05-11T01:43:02+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.hujiangtao.cn/post/Python/2018-01-23-Thinking-of-Python-project-structure.html</loc>
+  <lastmod>2018-05-11T01:43:02+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.hujiangtao.cn/post/Python/2017-12-14-Timed-jobs-in-Python.html</loc>
+  <lastmod>2018-05-11T01:43:02+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.hujiangtao.cn/post/Python/2017-11-24-Generate-requirements-in-Python-project.html</loc>
+  <lastmod>2018-05-11T01:43:02+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.hujiangtao.cn/post/Python/2017-01-19-Build-a-Python-Tornado-project.html</loc>
+  <lastmod>2018-05-11T01:43:02+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.hujiangtao.cn/post/Nginx/2018-03-24-Nginx-location-settings.html</loc>
+  <lastmod>2018-05-11T01:43:02+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://www.hujiangtao.cn/post/MySQL/2018-04-19-High-Performance-MySQL.html</loc>
+  <lastmod>2018-05-11T01:43:02+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://www.hujiangtao.cn/post/Mac/2018-05-11-Resolve-invalid-Sublime-Text3-regester-code.html</loc>
+  <lastmod>2018-05-11T01:43:02+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://www.hujiangtao.cn/post/Mac/2018-05-07-Sublime-Text-config-and-apply.html</loc>
+  <lastmod>2018-05-11T01:43:02+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://www.hujiangtao.cn/post/Mac/2018-05-02-Vim-config.html</loc>
+  <lastmod>2018-05-11T01:43:02+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://www.hujiangtao.cn/post/Mac/2018-04-23-Zsh-config-for-openning-files-with-Sublime-Text-on-the-Mac.html</loc>
+  <lastmod>2018-05-11T01:43:02+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://www.hujiangtao.cn/post/Mac/2018-03-19-Recommended-software-on-the-Mac.html</loc>
+  <lastmod>2018-05-11T01:43:02+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://www.hujiangtao.cn/post/Mac/2018-02-17-Install-MySQL-with-homebrew-one-the-Mac.html</loc>
+  <lastmod>2018-05-11T01:43:02+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://www.hujiangtao.cn/post/Mac/2018-02-05-Build-Python-environment-on-the-Mac.html</loc>
+  <lastmod>2018-05-11T01:43:02+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.17</priority>
+</url>
+<url>
+  <loc>https://www.hujiangtao.cn/post/Linux/2018-03-29-Config-on-the-remote-host.html</loc>
+  <lastmod>2018-05-11T01:43:02+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.13</priority>
+</url>
+<url>
+  <loc>https://www.hujiangtao.cn/post/Linux/2017-12-07-iptables.html</loc>
+  <lastmod>2018-05-11T01:43:02+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.11</priority>
+</url>
+<url>
+  <loc>https://www.hujiangtao.cn/post/Linux/2017-12-05-SSH-config-on-the-Linux.html</loc>
+  <lastmod>2018-05-11T01:43:02+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.11</priority>
+</url>
+<url>
+  <loc>https://www.hujiangtao.cn/post/Linux/2017-12-05-Install-supervisor-on-the-Centos.html</loc>
+  <lastmod>2018-05-11T01:43:02+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.11</priority>
+</url>
+<url>
+  <loc>https://www.hujiangtao.cn/post/Linux/2017-11-27-Deploy-project-to-remote-host.html</loc>
+  <lastmod>2018-05-11T01:43:02+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.11</priority>
+</url>
+<url>
+  <loc>https://www.hujiangtao.cn/post/Git/2018-03-24-Git-project-initialization.html</loc>
+  <lastmod>2018-05-11T01:43:02+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.09</priority>
+</url>
+<url>
+  <loc>https://www.hujiangtao.cn/post/Git/2018-02-11-Git-apply.html</loc>
+  <lastmod>2018-05-11T01:43:02+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.07</priority>
+</url>
+<url>
+  <loc>https://www.hujiangtao.cn/post/Frontend/2018-04-18-From-zero-to-React.html</loc>
+  <lastmod>2018-05-11T01:43:02+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.05</priority>
+</url>
+<url>
+  <loc>https://www.hujiangtao.cn/post/Frontend/2018-01-21-CSS-Flex-layout.html</loc>
+  <lastmod>2018-05-11T01:43:02+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.04</priority>
+</url>
+<url>
+  <loc>https://www.hujiangtao.cn/post/Frontend/2018-01-09-Detect-type-of-device-in-JavaScript.html</loc>
+  <lastmod>2018-05-11T01:43:02+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.04</priority>
+</url>
+<url>
+  <loc>https://www.hujiangtao.cn/post/Frontend/2017-12-05-Display-ellipsis-when-overflow-accurred-in-html-tables.html</loc>
+  <lastmod>2018-05-11T01:43:02+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.04</priority>
+</url>
+<url>
+  <loc>https://www.hujiangtao.cn/post/Frontend/2017-03-28-Table-order-in-jQuery.html</loc>
+  <lastmod>2018-05-11T01:43:02+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.04</priority>
+</url>
+<url>
+  <loc>https://www.hujiangtao.cn/post/API/2018-03-19-Common-API-Collections.html</loc>
+  <lastmod>2018-05-11T01:43:02+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.04</priority>
+</url>
+
+
+</urlset>
