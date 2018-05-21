@@ -2,7 +2,7 @@
 * @Author: jiangtao
 * @Date:   2018-04-24 22:46:26
 * @Last Modified by:   jiangtao
-* @Last Modified time: 2018-05-15 00:02:36
+* @Last Modified time: 2018-05-21 14:09:56
 */
 
 const { join, basename, relative } = require('path');
@@ -45,12 +45,12 @@ module.exports = {
         '/': {
             lang: 'en-US',
             title: 'Jiangtao',
-            description: 'Keep Calm and Carry On.-en'
+            description: 'Keep Calm and Carry On'
         },
         '/zh/': {
             lang: 'zh-CN',
             title: 'Jiangtao',
-            description: 'Keep Calm and Carry On.-zh'
+            description: '君子性非异也，善假于物也'
         }
     },
     head: [
