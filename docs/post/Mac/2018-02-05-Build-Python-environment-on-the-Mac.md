@@ -176,31 +176,43 @@ $ sudo easy_install python-pip
 
 - 出现==*pycurl报错*==的问题
 
+    **以下操作必须进入超级管理员模式下（注意此处的超管模式不同于直接在命令前加```sudo```）：**
+
+    ```
+    $ sudo -s
+    ```
+
     1. 卸载已有的pycurl
 
         ```bash
-        $ sudo pip uninstall pycurl
+        $(#) sudo pip uninstall pycurl
         ```
 
     2. 设置ssl环境变量
 
         ```bash
-        $ export PYCURL_SSL_LIBRARY=openssl
+        $(#) export PYCURL_SSL_LIBRARY=openssl
         ```
 
         *这个时候建议查看一下环境变量是否真的设置到位了：`echo $PYCURL_SSL_LIBRARY`，如果输出为`openssl`，则说明可以。*
 
-    3. 创建openssl的软链
+    3. 创建openssl的软链（此处的openssl目录请先自行查看，核实一遍）
 
         ```bash
-        $ ln -s /usr/local/Cellar/openssl/1.0.2n/include/openssl /usr/bin/openssl
+        $(#) ln -s /usr/local/Cellar/openssl/1.0.2n/include/openssl /usr/bin/openssl
         ```
 
     4. 安装pycurl
 
         ```bash
-        $ pip install pycurl
+        $(#) pip install pycurl
         ```
+
+    **执行结束要退出超级管理员模式：**
+
+    ```
+    $(#) exit
+    ```
 
 - 出现 "Command '/usr/bin/python -u -c ', '--compile',"等编译问题时候，可尝试如下：
 
