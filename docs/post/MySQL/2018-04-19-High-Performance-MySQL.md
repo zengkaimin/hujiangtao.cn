@@ -22,12 +22,4 @@ MySQL优化案例-->
     ```
 
 - [MySQL索引原理及慢查询优化](https://tech.meituan.com/mysql-index.html)
-
-
-
-
-
-
-
-
-
+- [图解 SQL 里的各种 JOIN](https://mazhuang.org/2017/09/11/joins-in-sql/#left-join)
