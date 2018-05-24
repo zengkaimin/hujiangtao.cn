@@ -144,3 +144,9 @@ class BaseRequestHandler(tornado.web.RequestHandler):
             return
 
 ```
+
+## Renference
+
+- [tornadoweb/tornado:1279 check_xsrf_cookie - GitHub](https://github.com/tornadoweb/tornado/blob/master/tornado/web.py)
+- [Ignore XSRF cookie check - GitHub tornadoweb/tornado](https://github.com/tornadoweb/tornado/commit/c50d9b8c789eb1914f31bd4dc7adbf1383c8fdb1)
+- [Flaw in CSRF handling - Django](https://www.djangoproject.com/weblog/2011/feb/08/security/)
