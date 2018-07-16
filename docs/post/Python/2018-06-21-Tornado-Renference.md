@@ -283,11 +283,11 @@ class MainHandler(tornado.web.RequestHandler):
         self.render("template.html", title="My title", items=items)
 ```
 
-Tornado 的模板支持“控制语句”和“表达语句”，控制语句是使用 {% 和 %} 包起来的，
-例如 {% if len(items) > 2 %}。表达语句是使用 {{ 和 }} 包起来的，例如 {{ items[0] }}。
+Tornado 的模板支持“控制语句”和“表达语句”，控制语句是使用 `{%` 和 `%}` 包起来的，
+例如 `{% if len(items) > 2 %}`。表达语句是使用 `{{` 和 `}}` 包起来的，例如 `{{ items[0] }}`。
 
 控制语句和对应的 Python 语句的格式基本完全相同。
-我们支持 if、for、while 和 try，这些语句逻辑结束的位置需要用 {% end %} 做标记。
+我们支持 if、for、while 和 try，这些语句逻辑结束的位置需要用 `{% end %}` 做标记。
 我们还通过 extends 和 block 语句实现了模板继承。
 这些在 [template](http://github.com/facebook/tornado/blob/master/tornado/template.py) 模块的代码文档中有着详细的描述。
 
@@ -326,8 +326,8 @@ Tornado 的模板支持“控制语句”和“表达语句”，控制语句是
 所有的模板输出都已经通过 tornado.escape.xhtml_escape 自动转义(escape)，
 这种默认行为，可以通过以下几种方式修改：
 将 autoescape=None 传递给 Application 或者 TemplateLoader、
-在模板文件中加入 {% autoescape None %}、
-或者在简单表达语句 {{ ... }} 写成 {% raw ...%}。
+在模板文件中加入 `{% autoescape None %}`、
+或者在简单表达语句 `{{ ... }}` 写成 `{% raw ...%}`。
 另外你可以在上述位置将 autoescape 设为一个自定义函数，而不仅仅是 None。
 
 ### Cookie 和安全 Cookie
@@ -723,8 +723,8 @@ CSS 是在页面的 <head> 部分，而 JavaScript 被渲染在页面结尾 </bo
 {% module Template("module-entry.html", show_comments=True) %}
 ```
 
-set_resources 函数只能在 {% module Template(...) %} 调用的模板中访问到。
-和 {% include ... %} 不同，模块式模板使用了和它们的上级模板不同的命名空间
+set_resources 函数只能在 `{% module Template(...) %}` 调用的模板中访问到。
+和 `{% include ... %}` 不同，模块式模板使用了和它们的上级模板不同的命名空间
 ——它们只能访问到全局模板命名空间和它们自己的关键字参数。
 
 ### 非阻塞式异步请求
@@ -981,7 +981,7 @@ Tornado 是 [Facebook开源技术](http://developers.facebook.com/opensource/)�
 [漏洞目录](http://sebug.net/appdir/)
 [@sebug](http://ssv.sebug.net/)
 
-## Renference
+## Rnference
 
 - [Tornado Documents](http://www.tornadoweb.org/en/stable/)
 - [Tornado 中文文档](http://tornado-zh.readthedocs.io/zh/latest/)
