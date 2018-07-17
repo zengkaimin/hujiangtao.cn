@@ -46,6 +46,9 @@ export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 ```
 
+**这一步在安装pyenv完成后建议立即进行设置，不然在后面的Python版本切换和控制中会不生效，
+尤其是 `pyenv init -` 的设置，`pyenv shell <version>` 是依赖于它的。**
+
 ### 使用
 
 - help文档
@@ -160,6 +163,8 @@ $ source ~/.bash_profile
 ```
 
 ### 使用
+
+**pipenv 的使用之前要确保pyenv在当前目录和当前shell环境设置了正确的Python版本**
 
 - 新项目创建虚拟环境
 
