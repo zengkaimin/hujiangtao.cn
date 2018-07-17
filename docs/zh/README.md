@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /sanzang.jpg
-actionText: 来都来了，不看看？
+actionText: 不忘初心
 actionLink: '/zh/post/'
 <!-- footer: MIT Licensed | Copyright © 2018-present Jiangtao -->
 ---
