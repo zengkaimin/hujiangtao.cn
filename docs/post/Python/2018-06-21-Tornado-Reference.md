@@ -1,5 +1,5 @@
 ---
-title: Tornado Renference
+title: Tornado参考
 date: 2018-06-21
 description: Tornado Web服务器概览,tornado教程,tornado开发教程
 ---
@@ -11,7 +11,7 @@ Tornado Web服务器概览,tornado教程,tornado开发教程-->
 
 ## 目录
 
-[toc]
+[[toc]]
 
 ## Overview
 
@@ -59,13 +59,13 @@ Tornado 已经列入 PyPI ，因此可以通过 pip 或者 easy_install 来安�
 如果你没有安装 libcurl 的话，你需要将其单独安装到系统中。请参见下面的安装依赖一节。
 注意一点，使用 pip 或 easy_install 安装的 Tornado 并没有包含源代码中的 demo 程序。
 
-- 手动安装： 下载 [tornado-2.0.tar.gz](http://github.com/downloads/facebook/tornado/tornado-2.0.tar.gz)
+- 手动安装：下载 [tornado-2.0.tar.gz](http://github.com/downloads/facebook/tornado/tornado-2.0.tar.gz)
 
 ```shell
-tar xvzf tornado-2.0.tar.gz
-cd tornado-2.0
-python setup.py build
-sudo python setup.py install
+$ tar xvzf tornado-2.0.tar.gz
+$ cd tornado-2.0
+$ python setup.py build
+$ sudo python setup.py install
 ```
 
 Tornado 的代码托管在 GitHub 上面。对于 Python 2.6 以上的版本，
@@ -81,13 +81,13 @@ Tornado 在 Python 2.5, 2.6, 2.7 中都经过了测试。要使用 Tornado 的�
 Mac OS X 10.6 (Python 2.6+)
 
 ```shell
-sudo easy_install setuptools pycurl
+$ sudo easy_install setuptools pycurl
 Ubuntu Linux (Python 2.6+)
 
-sudo apt-get install python-pycurl
+$ sudo apt-get install python-pycurl
 Ubuntu Linux (Python 2.5)
 
-sudo apt-get install python-dev python-pycurl python-simplejson
+$ sudo apt-get install python-dev python-pycurl python-simplejson
 ```
 
 ## 模块索引
@@ -153,9 +153,9 @@ class MainHandler(tornado.web.RequestHandler):
         self.write("You wrote " + self.get_argument("message"))
 ```
 
-上传的文件可以通过 self.request.files 访问到，
-该对象将名称（HTML元素 <input type="file">的 name 属性）对应到一个文件列表。
-每一个文件都以字典的形式 存在，其格式为 {"filename":..., "content_type":..., "body":...}。
+上传的文件可以通过 `self.request.files` 访问到，
+该对象将名称（HTML元素 `<input type="file">` 的 name 属性）对应到一个文件列表。
+每一个文件都以字典的形式 存在，其格式为 `{"filename":..., "content_type":..., "body":...}`。
 
 如果你想要返回一个错误信息给客户端，例如“403 unauthorized”，只需要抛出一个 tornado.web.HTTPError 异常：
 
@@ -167,10 +167,10 @@ if not self.user_is_logged_in():
 请求处理程序可以通过 self.request 访问到代表当前请求的对象。
 该 HTTPRequest 对象包含了一些有用的属性，包括：
 
-- arguments - 所有的 GET 或 POST 的参数
-- files - 所有通过 multipart/form-data POST 请求上传的文件
-- path - 请求的路径（ ? 之前的所有内容）
-- headers - 请求的开头信息
+- `arguments` - 所有的 GET 或 POST 的参数
+- `files` - 所有通过 multipart/form-data POST 请求上传的文件
+- `path` - 请求的路径（ ? 之前的所有内容）
+- `headers` - 请求的开头信息
 
 你可以通过查看源代码 httpserver 模组中 HTTPRequest 的定义，从而了解到它的 所有属性。
 
@@ -206,24 +206,25 @@ app = Application([
 
 其它设计用来被复写的方法有：
 
-- get_error_html(self, status_code, exception=None, **kwargs) - 以字符串的形式 返回 HTML，以供错误页面使用。
-- get_current_user(self) - 查看下面的用户认证一节
-- get_user_locale(self) - 返回 locale 对象，以供当前用户使用。
-- get_login_url(self) - 返回登录网址，以供 @authenticated 装饰器使用（默认位置 在 Application 设置中）
-- get_template_path(self) - 返回模板文件的路径（默认是 Application 中的设置）
+- `get_error_html(self, status_code, exception=None, **kwargs)` - 以字符串的形式 返回 HTML，以供错误页面使用。
+- `get_current_user(self)` - 查看下面的用户认证一节
+- `get_user_locale(self)` - 返回 locale 对象，以供当前用户使用。
+- `get_login_url(self)` - 返回登录网址，以供 @authenticated 装饰器使用（默认位置 在 Application 设置中）
+- `get_template_path(self)` - 返回模板文件的路径（默认是 Application 中的设置）
 
 ### 重定向(redirect)
 
 Tornado 中的重定向有两种主要方法：self.redirect，或者使用 RedirectHandler。
 
-你可以在使用 RequestHandler （例如 get）的方法中使用 self.redirect，将用户重定向到别的地方。
+你可以在使用 RequestHandler （例如 get）的方法中使用 s`elf.redirect`，将用户重定向到别的地方。
 另外还有一个可选参数 permanent，你可以用它指定这次操作为永久性重定向。
 
-该参数会激发一个 301 Moved Permanently HTTP 状态，这在某些情况下是有用的， 例如，你要将页面的原始链接重定向时，这种方式会更有利于搜索引擎优化（SEO）。
+该参数会激发一个 `301 Moved Permanently HTTP` 状态，这在某些情况下是有用的，
+例如，你要将页面的原始链接重定向时，这种方式会更有利于搜索引擎优化（SEO）。
 
 permanent 的默认值是 False，这是为了适用于常见的操作，例如用户端在成功发送 POST 请求以后的重定向。
 
-self.redirect('/some-canonical-page', permanent=True)
+`self.redirect('/some-canonical-page', permanent=True)`
 
 RedirectHandler 会在你初始化 Application 时自动生成。
 
@@ -246,8 +247,8 @@ application = tornado.wsgi.WSGIApplication([
 ], **settings)
 ```
 
-注意，在 self.redirect 和 RedirectHandler 中，permanent 的默认值是不同的。
-这样做是有一定道理的，self.redirect 通常会被用在自定义方法中，是由逻辑事件触发的
+注意，在 `self.redirect` 和 `RedirectHandler` 中，permanent 的默认值是不同的。
+这样做是有一定道理的，`self.redirect` 通常会被用在自定义方法中，是由逻辑事件触发的
 （例如环境变更、用户认证、以及表单提交）。而 RedirectHandler 是在每次匹配到请求 URL 时被触发。
 
 ### 模板
@@ -260,18 +261,18 @@ Tornado 模板其实就是 HTML 文件（也可以是任何文本格式的文件
 
 ```html
 <html>
-   <head>
-      <title>{{ title }}</title>
-   </head>
-   <body>
-     <ul>
-       {% for item in items %}
-         <li>{{ escape(item) }}</li>
-       {% end %}
-     </ul>
-   </body>
- </html>
- ```
+  <head>
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <ul>
+      {% for item in items %}
+        <li>{{ escape(item) }}</li>
+      {% end %}
+    </ul>
+  </body>
+</html>
+```
 
 如果你把上面的代码命名为 "template.html"，保存在 Python 代码的同一目录中，
 你就可以这样来渲染它：
@@ -284,7 +285,7 @@ class MainHandler(tornado.web.RequestHandler):
 ```
 
 Tornado 的模板支持“控制语句”和“表达语句”，控制语句是使用 `{%` 和 `%}` 包起来的，
-例如 `{% if len(items) > 2 %}`。表达语句是使用 `{{` 和 `}}` 包起来的，例如 `{{ items[0] }}`。
+例如 `{% if len(items) > 2 %}`。表达语句是使用 `\{{` 和 `}\}` 包起来的，例如 `\{{ items[0] }\}`。
 
 控制语句和对应的 Python 语句的格式基本完全相同。
 我们支持 if、for、while 和 try，这些语句逻辑结束的位置需要用 `{% end %}` 做标记。
@@ -296,21 +297,21 @@ Tornado 的模板支持“控制语句”和“表达语句”，控制语句是
 （注意，下面列表中的对象或方法在使用 RequestHandler.render 或者 render_string 时才存在的，
 如果你在 RequestHandler 外面直接使用 template 模块，则它们中的大部分是不存在的）。
 
-- escape: tornado.escape.xhtml_escape 的別名
-- xhtml_escape: tornado.escape.xhtml_escape 的別名
-- url_escape: tornado.escape.url_escape 的別名
-- json_encode: tornado.escape.json_encode 的別名
-- squeeze: tornado.escape.squeeze 的別名
-- linkify: tornado.escape.linkify 的別名
-- datetime: Python 的 datetime 模组
-- handler: 当前的 RequestHandler 对象
-- request: handler.request 的別名
-- current_user: handler.current_user 的別名
-- locale: handler.locale 的別名
-- _: handler.locale.translate 的別名
-- static_url: for handler.static_url 的別名
-- xsrf_form_html: handler.xsrf_form_html 的別名
-- reverse_url: Application.reverse_url 的別名
+- `escape`: tornado.escape.xhtml_escape 的別名
+- `xhtml_escape`: tornado.escape.xhtml_escape 的別名
+- `url_escape`: tornado.escape.url_escape 的別名
+- `json_encode`: tornado.escape.json_encode 的別名
+- `squeeze`: tornado.escape.squeeze 的別名
+- `linkify`: tornado.escape.linkify 的別名
+- `datetime`: Python 的 datetime 模组
+- `handler`: 当前的 RequestHandler 对象
+- `request`: handler.request 的別名
+- `current_user`: handler.current_user 的別名
+- `locale`: handler.locale 的別名
+- `_`: handler.locale.translate 的別名
+- `static_url`: for handler.static_url 的別名
+- `xsrf_form_html`: handler.xsrf_form_html 的別名
+- `reverse_url`: Application.reverse_url 的別名
 - Application 设置中 ui_methods 和 ui_modules 下面的所有项目
 - 任何传递给 render 或者 render_string 的关键字参数
 
@@ -327,7 +328,7 @@ Tornado 的模板支持“控制语句”和“表达语句”，控制语句是
 这种默认行为，可以通过以下几种方式修改：
 将 autoescape=None 传递给 Application 或者 TemplateLoader、
 在模板文件中加入 `{% autoescape None %}`、
-或者在简单表达语句 `{{ ... }}` 写成 `{% raw ...%}`。
+或者在简单表达语句 `\{{ ... }\}` 写成 `{% raw ...%}`。
 另外你可以在上述位置将 autoescape 设为一个自定义函数，而不仅仅是 None。
 
 ### Cookie 和安全 Cookie
@@ -463,7 +464,7 @@ application = tornado.web.Application([
 如果设置了 xsrf_cookies，那么 Tornado 的 Web 应用将对所有用户设置一个 `_xsrf` 的 cookie 值，
 如果 POST PUT DELET 请求中没有这个 cookie 值，那么这个请求会被直接拒绝。
 如果你开启了这个机制，那么在所有被提交的表单中，你都需要加上一个域来提供这个值。
-你可以通过在模板中使用专门的函数 xsrf_form_html() 来做到这一点：
+你可以通过在模板中使用专门的函数 `xsrf_form_html()` 来做到这一点：
 
 ```html
 <form action="/new_message" method="post">
@@ -494,8 +495,8 @@ jQuery.postJSON = function(url, args, callback) {
 对于 PUT 和 DELETE 请求（以及不使用将 form 内容作为参数的 POST 请求）来说，
 你也可以在 HTTP 头中以 X-XSRFToken 这个参数传递 XSRF token。
 
-如果你需要针对每一个请求处理器定制 XSRF 行为，你可以重写 RequestHandler.check_xsrf_cookie()。
-例如你需要使用一个不支持 cookie 的 API，你可以通过将 check_xsrf_cookie() 函数设空来禁用 XSRF 保护机制。
+如果你需要针对每一个请求处理器定制 XSRF 行为，你可以重写 `RequestHandler.check_xsrf_cookie()`。
+例如你需要使用一个不支持 cookie 的 API，你可以通过将 `check_xsrf_cookie()` 函数设空来禁用 XSRF 保护机制。
 然而如果你需要同时支持 cookie 和非 cookie 认证方式，那么只要当前请求是通过 cookie 进行认证的，
 你就应该对其使用 XSRF 保护机制，这一点至关重要。
 
@@ -518,13 +519,13 @@ application = tornado.web.Application([
 ```
 
 这样配置后，所有以 /static/ 开头的请求，都会直接访问到指定的静态文件目录，
-比如 http://localhost:8888/static/foo.png 会从指定的静态文件目录中访问到 foo.png 这个文件。
+比如 `http://localhost:8888/static/foo.png` 会从指定的静态文件目录中访问到 foo.png 这个文件。
 同时 /robots.txt 和 /favicon.ico 也是会自动作为静态文件处理（即使它们不是以 /static/ 开头）。
 
 在上述配置中，我们使用 StaticFileHandler 特别指定了让 Tornado 从根目录伺服 apple-touch-icon.png 这个文件，
 尽管它的物理位置还是在静态文件目录中。（正则表达式的匹配分组的目的是向 StaticFileHandler 指定所请求的文件名称，
 抓取到的分组会以方法参数的形式传递给处理器。）通过相同的方式，你也可以从站点的更目录伺服 sitemap.xml 文件。
-当然，你也可以通过在 HTML 中使用正确的 <link /> 标签来避免这样的根目录文件伪造行为。
+当然，你也可以通过在 HTML 中使用正确的 `<link />` 标签来避免这样的根目录文件伪造行为。
 
 为了提高性能，在浏览器主动缓存静态文件是个不错的主意。
 这样浏览器就不需要发送不必要的 If-Modified-Since 和 Etag 请求，从而影响页面的渲染速度。
@@ -535,13 +536,13 @@ Tornado 可以通过内建的“静态内容分版(static content versioning)”
 
 ```html
 <html>
-   <head>
-      <title>FriendFeed - {{ _("Home") }}</title>
-   </head>
-   <body>
-     <div><img src="{{ static_url("images/logo.png") }}"/></div>
-   </body>
- </html>
+  <head>
+    <title>FriendFeed - {{ _("Home") }}</title>
+  </head>
+  <body>
+    <div><img src="{{ static_url("images/logo.png") }}"/></div>
+  </body>
+</html>
 ```
 
 static_url() 函数会将相对地址转成一个类似于 /static/images/logo.png?v=aae54 的 URI，
@@ -555,14 +556,14 @@ v 参数是 logo.png 文件的散列值， Tornado 服务器会把它发给浏�
 在生产环境下，你可能会使用 [nginx](http://nginx.net/) 这样的更有利于静态文件伺服的服务器，
 你可以将 Tornado 的文件缓存指定到任何静态文件服务器上面，下面是 FriendFeed 使用的 nginx 的相关配置：
 
-```
+```shell
 location /static/ {
     root /var/friendfeed/static;
     if ($query_string) {
         expires max;
     }
- }
- ```
+}
+```
 
 ### 本地化
 
@@ -588,18 +589,18 @@ Locale 的名称（如 en_US）可以通过 locale.name 这个变量访问到，
 
 ```html
 <html>
-   <head>
-      <title>FriendFeed - {{ _("Sign in") }}</title>
-   </head>
-   <body>
-     <form action="{{ request.path }}" method="post">
-       <div>{{ _("Username") }} <input type="text" name="username"/></div>
-       <div>{{ _("Password") }} <input type="password" name="password"/></div>
-       <div><input type="submit" value="{{ _("Sign in") }}"/></div>
-       {{ xsrf_form_html() }}
-     </form>
-   </body>
- </html>
+  <head>
+    <title>FriendFeed - {{ _("Sign in") }}</title>
+  </head>
+  <body>
+    <form action="{{ request.path }}" method="post">
+      <div>{{ _("Username") }} <input type="text" name="username"/></div>
+      <div>{{ _("Password") }} <input type="password" name="password"/></div>
+      <div><input type="submit" value="{{ _("Sign in") }}"/></div>
+      {{ xsrf_form_html() }}
+    </form>
+    </body>
+</html>
 ```
 
 默认情况下，我们通过 Accept-Language 这个头来判定用户的 locale，如果没有，则取 en_US 这个值。
@@ -621,7 +622,7 @@ class BaseHandler(tornado.web.RequestHandler):
 
 如果 get_user_locale 返回 None，那么就会再去取 Accept-Language header 的值。
 
-你可以使用 tornado.locale.load_translations 方法获取应用中的所有已存在的翻译。
+你可以使用 `tornado.locale.load_translations` 方法获取应用中的所有已存在的翻译。
 它会找到包含有特定名字的 CSV 文件的目录，如 es_GT.csv fr_CA.csv 这些 csv 文件。
 然后从这些 CSV 文件中读取出所有的与特定语言相关的翻译内容。
 典型的用例里面，我们会在 Tornado 服务器的 main() 方法中调用一次该函数：
@@ -633,7 +634,7 @@ def main():
     start_server()
 ```
 
-你可以使用 tornado.locale.get_supported_locales() 方法得到支持的 locale 列表。
+你可以使用 `tornado.locale.get_supported_locales()` 方法得到支持的 locale 列表。
 Tornado 会依据用户当前的 locale 设置以及已有的翻译，为用户选择一个最佳匹配的显示语言。
 比如，用户的 locale 是 es_GT 而翻译中只支持了 es，那么 self.locale 就会被设置为 es。
 如果找不到最接近的 locale 匹配，self.locale 就会就会取备用值 es_US。
@@ -681,7 +682,7 @@ application = tornado.web.Application([
 
 在 home.html 中，你不需要写繁复的 HTML 代码，只要引用 Entry 就可以了：
 
-```python
+```html
 {% for entry in entries %}
   {% module Entry(entry) %}
 {% end %}
@@ -689,7 +690,7 @@ application = tornado.web.Application([
 
 在 entry.html 里面，你需要使用 show_comments 参数来引用 Entry 模块，用来显示展开的 Entry 内容：
 
-```python
+```html
 {% module Entry(entry, show_comments=True) %}
 ```
 
@@ -707,7 +708,7 @@ class Entry(tornado.web.UIModule):
 ```
 
 即使一页中有多个相同的 UI 组件，UI 组件的 CSS 和 JavaScript 部分只会被渲染一次。
-CSS 是在页面的 <head> 部分，而 JavaScript 被渲染在页面结尾 </body> 之前的位置。
+CSS 是在页面的 `<head>` 部分，而 JavaScript 被渲染在页面结尾 `</body>` 之前的位置。
 
 在不需要额外 Python 代码的情况下，模板文件也可以当做 UI 模块直接使用。
 例如前面的例子可以以下面的方式实现，只要把这几行放到 module-entry.html 中就可以了：
@@ -732,9 +733,9 @@ set_resources 函数只能在 `{% module Template(...) %}` 调用的模板中访
 当一个处理请求的行为被执行之后，这个请求会自动地结束。
 因为 Tornado 当中使用了 一种非阻塞式的 I/O 模型，
 所以你可以改变这种默认的处理行为——让一个请求一直保持连接状态，而不是马上返回，直到一个主处理行为返回。
-要实现这种处理方式，只需要使用 tornado.web.asynchronous 装饰器就可以了。
+要实现这种处理方式，只需要使用 `tornado.web.asynchronous` 装饰器就可以了。
 
-使用了这个装饰器之后，你必须调用 self.finish() 已完成 HTTTP 请求，
+使用了这个装饰器之后，你必须调用 `self.finish()` 已完成 HTTTP 请求，
 否则用户的浏览器会一直处于等待服务器响应的状态：
 
 ```python
@@ -764,12 +765,12 @@ class MainHandler(tornado.web.RequestHandler):
 ```
 
 例子中，当 get() 方法返回时，请求处理还没有完成。
-在 HTTP 客户端执行它的回调函数 on_response() 时，从浏览器过来的请求仍然是存在的，
-只有在显式调用了 self.finish() 之后，才会把响应返回到浏览器。
+在 HTTP 客户端执行它的回调函数 `on_response()` 时，从浏览器过来的请求仍然是存在的，
+只有在显式调用了 `self.finish()` 之后，才会把响应返回到浏览器。
 
 关于更多异步请求的高级例子，可以参阅 demo 中的 chat 这个例子。
 它是一个使用 [long polling](http://en.wikipedia.org/wiki/Push_technology#Long_polling) 方式 的 AJAX 聊天室。
-如果你使用到了 long polling，你可能需要复写on_connection_close()，
+如果你使用到了 long polling，你可能需要复写 `on_connection_close()`，
 这样你可以在客户连接关闭以后做相关的清理动作。（请查看该方法的代码文档，以防误用。）
 
 ### 异步 HTTP 客户端
@@ -785,7 +786,7 @@ Tornado 包含了两种非阻塞式 HTTP 客户端实现：SimpleAsyncHTTPClient
 默认情况下使用的是 SimpleAsyncHTTPClient，如果要修改默认值，
 只要在一开始调用 AsyncHTTPClient.configure 方法即可：
 
-AsyncHTTPClient.configure('tornado.curl_httpclient.CurlAsyncHTTPClient')
+`AsyncHTTPClient.configure('tornado.curl_httpclient.CurlAsyncHTTPClient')`
 
 ### 第三方认证
 
@@ -841,7 +842,8 @@ class GoogleHandler(tornado.web.RequestHandler, tornado.auth.GoogleMixin):
 
 我们使用 Apache Benchmark (ab)，在另外一台机器上使用了如下指令进行负载测试：
 
-ab -n 100000 -c 25 http://10.0.1.x/
+> ab -n 100000 -c 25 http://10.0.1.x/
+
 在 AMD Opteron 2.4GHz 的四核机器上，结果如下图所示：
 
 
@@ -981,7 +983,7 @@ Tornado 是 [Facebook开源技术](http://developers.facebook.com/opensource/)�
 [漏洞目录](http://sebug.net/appdir/)
 [@sebug](http://ssv.sebug.net/)
 
-## Rnference
+## Reference
 
 - [Tornado Documents](http://www.tornadoweb.org/en/stable/)
 - [Tornado 中文文档](http://tornado-zh.readthedocs.io/zh/latest/)
