@@ -15,7 +15,7 @@ Python同步脚本的demo和异步脚本的demo-->
 
 ## 目录
 
-[toc]
+[[toc]]
 
 ## python_script_demo_sync
 
