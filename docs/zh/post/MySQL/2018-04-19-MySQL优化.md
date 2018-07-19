@@ -13,6 +13,14 @@ MySQL优化案例-->
 
 [[toc]]
 
+## Base
+
+- SQL语句的语法顺序
+
+```
+FROM -> WHERE -> GROUP BY -> HAVING -> SELECT -> DISTINCT -> UNION -> ORDER BY
+```
+
 ## 查询
 
 - [使用MySQL 5.7虚拟列提高查询效率](https://yq.aliyun.com/articles/495586?spm=a2c4e.11153940.bloghomeflow.28.632c291adDwIsb)
