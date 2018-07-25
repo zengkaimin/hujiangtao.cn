@@ -29,7 +29,7 @@ $ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
     添加如下内容：
 
-    ```sh
+    ```bash
     set nocompatible              " required
     filetype off                  " required
 
