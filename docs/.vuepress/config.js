@@ -2,7 +2,7 @@
 * @Author: jiangtao
 * @Date:   2018-04-24 22:46:26
 * @Last Modified by:   jiangtao
-* @Last Modified time: 2018-07-25 16:45:13
+* @Last Modified time: 2018-07-25 18:13:09
 */
 
 const { join, basename, relative } = require('path');
@@ -93,7 +93,7 @@ module.exports = {
                     },
                 ],
                 sidebar: {
-                    'post/': [
+                    '/post/': [
                         ...generateBlogSideBar('/post'),
                         ],
                 },
@@ -124,7 +124,7 @@ module.exports = {
                     },
                 ],
                 sidebar: {
-                    'zh/post/': [
+                    '/zh/post/': [
                         ...generateBlogSideBar('/zh/post'),
                         ],
                 },
