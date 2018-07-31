@@ -9,3 +9,60 @@
 // $textColor = #2c3e50
 // $borderColor = #eaecef
 // $codeBgColor = #282c34
+
+// setting for satisfying vuepress@0.8.4
+// sidebar
+.sidebar {
+    transition: max-width 0.5s, box-shadow 0.5s;
+    max-width: $sidebarWidth;
+    min-width: $sidebarWidth;
+    width: auto !important;
+}
+
+.sidebar {
+    white-space: nowrap;
+}
+
+.sidebar:hover {
+    max-width: 50vw;
+    box-shadow: 1px 0px 10px 5px #eaecef;
+}
+
+// dl - Inspired by Jason Yu
+dl {
+  display: grid;
+  align-items: stretch;
+  grid-column-gap: 2rem;
+  grid-row-gap: 0.5rem;
+  padding: 1rem;
+  border: 3px double $borderColor;
+  overflow-x: auto;
+  line-height: 1.7;
+}
+
+@media (min-width: $MQMobile) {
+  dl {
+    grid-template-columns: min-content 1fr;
+  }
+}
+
+dt {
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+dd {
+  margin: 0;
+}
+
+dd p:first-of-type {
+  margin-top: 0;
+}
+
+dd p:last-of-type {
+  margin-bottom: 0;
+}
+
+dd ul {
+  margin: 0;
+}
