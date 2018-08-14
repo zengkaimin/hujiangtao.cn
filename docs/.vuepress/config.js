@@ -2,7 +2,7 @@
 * @Author: jiangtao
 * @Date:   2018-04-24 22:46:26
 * @Last Modified by:   jiangtao
-* @Last Modified time: 2018-07-25 18:13:09
+* @Last Modified time: 2018-08-15 01:03:03
 */
 
 const { join, basename, relative } = require('path');
@@ -40,6 +40,7 @@ module.exports = {
     // port: 8888,
     evergreen: true,
     serviceWorker: true,
+    ga: 'UA-123873826-1',
 
     locales: {
         '/': {
