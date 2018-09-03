@@ -18,6 +18,8 @@ description: Windows常用软件清单
 
 ## 软件清单
 
+### 幼儿园
+
 - `QQ轻聊版`: https://im.qq.com/download/
 
     qq轻聊版无广告，体积小，体验好
@@ -82,4 +84,26 @@ description: Windows常用软件清单
 - `QQ音乐`: https://y.qq.com/download/mac.html?part=1&ADTAG=YQQ
 
 - 更多等待持续解锁中。。。
+
+### 专业的
+
+- `Java IDEA`: https://www.jetbrains.com/idea/download/
+
+    Java IDEA，下载专业版，不要社区版，账户激活找我
+
+- `DataGrip`: https://www.jetbrains.com/datagrip/
+
+    SQL链接客户端，查看数据和建表非常方便，但是数据导出较为不便
+
+- `HeidiSQL`: https://www.heidisql.com/download.php
+
+    MySQL数据客户端，查看表结构和数据导出非常方便，但是查看数据较为不便
+
+- `jdk-8`: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+
+    jdk 8
+
+- `FoxMail`: https://www.foxmail.com/
+
+    QQ邮箱和QQ企业邮箱就用它
 
