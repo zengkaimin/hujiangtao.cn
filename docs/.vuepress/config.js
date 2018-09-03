@@ -2,7 +2,7 @@
 * @Author: jiangtao
 * @Date:   2018-04-24 22:46:26
 * @Last Modified by:   jiangtao
-* @Last Modified time: 2018-08-15 01:03:03
+* @Last Modified time: 2018-09-03 14:11:50
 */
 
 const { join, basename, relative } = require('path');
@@ -39,7 +39,7 @@ module.exports = {
     // base: '/vuepress/',
     // port: 8888,
     evergreen: true,
-    serviceWorker: true,
+    serviceWorker: false,
     ga: 'UA-123873826-1',
 
     locales: {
