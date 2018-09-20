@@ -2,7 +2,7 @@
 * @Author: jiangtao
 * @Date:   2018-04-24 22:46:26
 * @Last Modified by:   jiangtao
-* @Last Modified time: 2018-09-03 14:11:50
+* @Last Modified time: 2018-09-20 17:00:08
 */
 
 const { join, basename, relative } = require('path');
@@ -48,11 +48,11 @@ module.exports = {
             title: 'Jiangtao',
             description: 'Keep Calm and Carry On'
         },
-        '/zh/': {
-            lang: 'zh-CN',
-            title: 'Jiangtao',
-            description: '君子性非异也，善假于物也'
-        }
+        // '/zh/': {
+        //     lang: 'zh-CN',
+        //     title: 'Jiangtao',
+        //     description: '君子性非异也，善假于物也'
+        // }
     },
     head: [
         ['link', { rel: 'icon', href: `/favicon.png` }],
@@ -101,35 +101,35 @@ module.exports = {
                 // search: false,
                 // searchMaxSuggestions: 10,
             },
-            '/zh/': {
-                label: '简体中文',
-                selectText: '选择语言',
-                // editLinkText: '编辑此页',
-                lastUpdated: '上次更新',
-                nav: [
-                    {
-                        text: '主页',
-                        link: '/zh/index'
-                    },
-                    {
-                        text: '文章',
-                        link: '/zh/post/'
-                    },
-                    {
-                        text: '关于',
-                        link: '/zh/about'
-                    },
-                    {
-                        text: '联系我',
-                        link: '/zh/contact'
-                    },
-                ],
-                sidebar: {
-                    '/zh/post/': [
-                        ...generateBlogSideBar('/zh/post'),
-                        ],
-                },
-            }
+            // '/zh/': {
+            //     label: '简体中文',
+            //     selectText: '选择语言',
+            //     // editLinkText: '编辑此页',
+            //     lastUpdated: '上次更新',
+            //     nav: [
+            //         {
+            //             text: '主页',
+            //             link: '/zh/index'
+            //         },
+            //         {
+            //             text: '文章',
+            //             link: '/zh/post/'
+            //         },
+            //         {
+            //             text: '关于',
+            //             link: '/zh/about'
+            //         },
+            //         {
+            //             text: '联系我',
+            //             link: '/zh/contact'
+            //         },
+            //     ],
+            //     sidebar: {
+            //         '/zh/post/': [
+            //             ...generateBlogSideBar('/zh/post'),
+            //             ],
+            //     },
+            // }
         },
         sidebarDepth: 0,
         algolia: {
