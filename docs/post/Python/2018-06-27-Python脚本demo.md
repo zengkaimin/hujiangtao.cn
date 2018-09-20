@@ -177,7 +177,7 @@ if __name__ == "__main__":
 
 ## 启动方式
 
-```shell
+```bash
 $ python python_script_demo_sync.py
 $ python python_script_demo_async.py
 ```

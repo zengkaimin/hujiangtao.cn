@@ -31,7 +31,7 @@ pyenv & pipenv 管理Python项目环境依赖-->
 
 使用 `brew ` 安装，主要是方便管理，非Mac下再使用 `git` 手动安装或其他方式
 
-```shell
+```bash
 $ brew install pyenv
 $ brew upgrade pyenv
 ```
@@ -40,7 +40,7 @@ $ brew upgrade pyenv
 
 安装成功之后需要在.bashrc或者.bash_profile或.zshrc中添加两行来开启自动补全
 
-```shell
+```bash
 # setting for pyenv
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
@@ -53,14 +53,14 @@ eval "$(pyenv init -)"
 
 - help文档
 
-```shell
+```bash
 $ pyenv
 $ pyenv help
 ```
 
 - 查看管理的Python版本
 
-```shell
+```bash
 $ pyenv versions
 ```
 
@@ -68,13 +68,13 @@ $ pyenv versions
 
 -  列出所有pipenv可安装的版本
 
-```shell
+```bash
 $ pyenv install --list
 ```
 
 - 安装指定版本
 
-```shell
+```bash
 $ pyenv install <version>
 $ pyenv install 3.6.5
 $ pyenv install 2.7.14
@@ -82,7 +82,7 @@ $ pyenv install 2.7.14
 
 - Python版本管理
 
-```shell
+```bash
 $ pyenv global <version>  # 全局设置python版本为指定版本，设置全局的 Python 版本，通过将版本号写入 ~/.pyenv/version 文件的方式。
 $ pyenv local <version>   # 设置当前路径下python版本为指定版本，设置 Python 本地版本，通过将版本号写入当前目录下的 .python-version 文件的方式。通过这种方式设置的 Python 版本优先级较 global 高。
 $ pyenv shell <version>   # 设置当前shell窗口使用的python版本为指定版本，设置面向 shell 的 Python 版本，通过设置当前 shell 的 PYENV_VERSION 环境变量的方式。这个版本的优先级比 local 和 global 都要高。–unset 参数可以用于取消当前 shell 设定的版本。
@@ -92,7 +92,7 @@ $ pyenv shell <version>   # 设置当前shell窗口使用的python版本为指�
 
 - Python版本的优先级
 
-```shell
+```bash
 shell > local > global
 ```
 
@@ -100,7 +100,7 @@ pyenv会从当前目录开始向上逐级查找.python-versiob文件，直到根
 
 - 创建垫片路径
 
-```shell
+```bash
 $ pyenv rehash
 ```
 
@@ -109,7 +109,7 @@ $ pyenv rehash
 
 - Python卸载
 
-```shell
+```bash
 $ pyenv isntall <version> # 安装版本号为<version>的Python
 $ pyenv uninstall <version> #卸载版本号为<version>的Python
 ```
@@ -139,7 +139,7 @@ pipenv的思路简单理解便是把pip和virutalenv 2个工具统一起来，�
 **尝试过使用pip install --user pipenv 和 brew install pipenv，安装的版本是不一样的**
 这里建议使用 `brew ` 安装，主要是方便管理，非Mac下再使用 `pip` 安装
 
-```shell
+```bash
 $ brew install pipenv
 $ brew upgrade pipenv
 ```
@@ -149,14 +149,14 @@ $ brew upgrade pipenv
 我们希望在每个项目的根目录下保存虚拟环境目录（.venv），
 需要在 .bashrc 或 .bash_profile 中添加如下配置：
 
-```shell
+```bash
 # setting for pipenv
 export PIPENV_VENV_IN_PROJECT=1
 ```
 
 退出编辑后执行：
 
-```shell
+```bash
 $ source ~/.bashrc
 或者
 $ source ~/.bash_profile
@@ -168,7 +168,7 @@ $ source ~/.bash_profile
 
 - 新项目创建虚拟环境
 
-```shell
+```bash
 $ mkdir pipenv_demo
 $ cd pipenv_demo
 # 初始化一个python3虚拟环境
@@ -181,7 +181,7 @@ $ pipenv --three
 
 直接在该项目根目录下创建
 
-```shell
+```bash
 $ cd pipenv_demo
 $ pipenv --three
 ```
@@ -191,7 +191,7 @@ $ pipenv --three
 
 - 安装卸载包
 
-```shell
+```bash
 $ pipenv install flask
 $ pipenv install pytest --dev   # 用于区分需要部署到线上的开发包、只需要在测试环境中执行的包
 $ pipenv uninstall flask
@@ -199,7 +199,7 @@ $ pipenv uninstall flask
 
 - 通过requirements安装包
 
-```shell
+```bash
 $ pipenv install -r requirements.txt
 # 生成requirements文件
 $ pipenv lock -r [--dev] > requirements.txt
@@ -209,7 +209,7 @@ $ pipenv lock -r [--dev] > requirements.txt
 
 安装项目中Pipfile和Pipfile.lock中记录的所有依赖
 
-```shell
+```bash
 # 安装[packages]下的包
 $ pipenv install
 
@@ -220,13 +220,13 @@ $ pipenv install -d
 上面的方法都是安装Pipfile中列出来的第三方包的最新版本，
 如果是想安装Pipfile.lock中固定版本的第三方依赖包，需要执行：
 
-```shell
+```bash
 $ pipenv install --ignore-pipfile
 ```
 
 - 检查已安装的包
 
-```shell
+```bash
 $ pipenv graph
 ```
 
@@ -239,7 +239,7 @@ $ pipenv graph
 
 启动虚拟环境的shell环境，可以直接在虚拟环境下开发
 
-```shell
+```bash
 $ pipenv shell
 $ source /path_to_.venv/bin/activate
 $ pipenv shell --anyway
@@ -247,13 +247,13 @@ $ pipenv shell --anyway
 
 也可以运行项目
 
-```shell
+```bash
 $ pipenv run python xxx.py
 ```
 
 - 删除虚拟环境
 
-```shell
+```bash
 $ cd pipenv_demo
 $ pipenv --rm
 ```
@@ -268,7 +268,7 @@ $ pipenv --rm
 可以更新 pypi源来提高依赖库安装的速度，修改 `Pipfile` 文件中的 `[[source]]` 的 `url`，
 设置为国内镜像源
 
-```shell
+```bash
 [[source]]
 #url = "https://pypi.org/simple"
 url = "https://pypi.tuna.tsinghua.edu.cn/simple"

@@ -23,7 +23,7 @@ Nginx反向代理supervisor日志-->
 
 - 一般配置如下：
 
-```shell
+```bash
 # 一般的反向代理配置无外乎如下两种，一种比较简单，一种使用较为普遍
 server {
     listen       8001;
@@ -60,7 +60,7 @@ server {
 
 - 修改后的配置如下：
 
-```shell
+```bash
 server {
     listen       8001;
     server_name  localhost 192.168.2.60;

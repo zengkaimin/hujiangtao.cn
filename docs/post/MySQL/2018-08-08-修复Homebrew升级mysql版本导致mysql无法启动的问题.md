@@ -17,7 +17,7 @@ description: 修复Homebrew升级mysql版本导致mysql无法启动的问题
 但是在升级过程中是没有停止mysql服务的，这就导致了一些问题，
 今天连接数据库的时候就出现了一些问题，连接不上
 
-```shell
+```bash
 $ mysql.server start
 Starting MySQL
 .. ERROR! The server quit without updating PID file (/usr/local/var/mysql/wai.local.pid).
@@ -46,7 +46,7 @@ Then you can uninstall older version or not, and latest version can be used yet.
 
 具体解决方式如下：
 
-```shell
+```bash
 $ brew install mysql@5.7
 $ brew services stop mysql && brew services start mysql@5.7
 $ brew services stop mysql@5.7 && brew services start mysql
