@@ -2,7 +2,7 @@
 * @Author: jiangtao
 * @Date:   2018-04-24 22:46:26
 * @Last Modified by:   jiangtao
-* @Last Modified time: 2018-09-20 17:00:08
+* @Last Modified time: 2018-09-25 10:50:12
 */
 
 const { join, basename, relative } = require('path');
@@ -131,11 +131,15 @@ module.exports = {
             //     },
             // }
         },
-        sidebarDepth: 0,
+        sidebarDepth: 2,
+        // displayAllHeaders: true,
         algolia: {
             apiKey: '5eb22bc026c0550c84b1b1bd23ea2139',
             indexName: 'hujiangtao'
-        }
+        },
+        // serviceWorker: {
+        //     updatePopup: true,  // refresh button when serviceWorker
+        // },
     },
     markdown: {
         // lineNumbers: true,
