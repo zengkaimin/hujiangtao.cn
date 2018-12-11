@@ -133,10 +133,10 @@ module.exports = {
         },
         sidebarDepth: 2,
         // displayAllHeaders: true,
-        algolia: {
-            apiKey: '5eb22bc026c0550c84b1b1bd23ea2139',
-            indexName: 'hujiangtao'
-        },
+        // algolia: {
+        //     apiKey: '5eb22bc026c0550c84b1b1bd23ea2139',
+        //     indexName: 'hujiangtao'
+        // },
         // serviceWorker: {
         //     updatePopup: true,  // refresh button when serviceWorker
         // },
