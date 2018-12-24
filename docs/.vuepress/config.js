@@ -2,7 +2,7 @@
 * @Author: jiangtao
 * @Date:   2018-04-24 22:46:26
 * @Last Modified by:   jiangtao
-* @Last Modified time: 2018-09-25 10:50:12
+* @Last Modified time: 2018-12-24 14:26:44
 */
 
 const { join, basename, relative } = require('path');
@@ -45,7 +45,8 @@ module.exports = {
     locales: {
         '/': {
             lang: 'en-US',
-            title: 'Jiangtao',
+            // title: 'Jiangtao',
+            title: '木先生',
             description: 'Keep Calm and Carry On'
         },
         // '/zh/': {
