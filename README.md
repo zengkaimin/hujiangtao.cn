@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.hujiangtao.cn/" target="_blank">
-    <img width="280" src="https://github.com/hustjiangtao/hujiangtao.cn/blob/master/docs/.vuepress/public/sanzang.jpg?raw=true" alt="logo">
+    <img width="320" src="https://static.hujiangtao.cn/image/2019/06/logo.jpg" alt="logo">
   </a>
 </p>
 
