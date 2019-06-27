@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Python-Script-Demo | 木先生</title>
+    <meta name="description" content="Demos for Python script">
+    <link rel="icon" href="/favicon.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#3eaf7c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon" href="/favicon.png">
+  <meta name="msapplication-TileImage" content="/favicon.png">
+  <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.593102d0.css" as="style"><link rel="preload" href="/assets/js/app.9c3b2f40.js" as="script"><link rel="preload" href="/assets/js/47.474d0da3.js" as="script"><link rel="prefetch" href="/assets/js/10.db6d2b23.js"><link rel="prefetch" href="/assets/js/11.5eec0cf0.js"><link rel="prefetch" href="/assets/js/12.48cc16ff.js"><link rel="prefetch" href="/assets/js/13.227a98da.js"><link rel="prefetch" href="/assets/js/14.dd432dff.js"><link rel="prefetch" href="/assets/js/15.1937fbfb.js"><link rel="prefetch" href="/assets/js/16.249d8c5c.js"><link rel="prefetch" href="/assets/js/17.f336ed5e.js"><link rel="prefetch" href="/assets/js/18.4a0023fb.js"><link rel="prefetch" href="/assets/js/19.47d9327c.js"><link rel="prefetch" href="/assets/js/2.1faa0878.js"><link rel="prefetch" href="/assets/js/20.c4cd5dc9.js"><link rel="prefetch" href="/assets/js/21.2faac9e3.js"><link rel="prefetch" href="/assets/js/22.6159852d.js"><link rel="prefetch" href="/assets/js/23.4d8c66d7.js"><link rel="prefetch" href="/assets/js/24.ef8ce863.js"><link rel="prefetch" href="/assets/js/25.3cf50925.js"><link rel="prefetch" href="/assets/js/26.67d3b388.js"><link rel="prefetch" href="/assets/js/27.bf825405.js"><link rel="prefetch" href="/assets/js/28.0cb8a491.js"><link rel="prefetch" href="/assets/js/29.99578b0c.js"><link rel="prefetch" href="/assets/js/3.386eea71.js"><link rel="prefetch" href="/assets/js/30.252f5b97.js"><link rel="prefetch" href="/assets/js/31.028178c1.js"><link rel="prefetch" href="/assets/js/32.340c7f35.js"><link rel="prefetch" href="/assets/js/33.1e9d0600.js"><link rel="prefetch" href="/assets/js/34.8a8cce8c.js"><link rel="prefetch" href="/assets/js/35.c94db349.js"><link rel="prefetch" href="/assets/js/36.0b7766b9.js"><link rel="prefetch" href="/assets/js/37.2ff91466.js"><link rel="prefetch" href="/assets/js/38.d9462a48.js"><link rel="prefetch" href="/assets/js/39.52a2f1e0.js"><link rel="prefetch" href="/assets/js/4.77a79f01.js"><link rel="prefetch" href="/assets/js/40.8f3c38e6.js"><link rel="prefetch" href="/assets/js/41.4006441f.js"><link rel="prefetch" href="/assets/js/42.c98081d3.js"><link rel="prefetch" href="/assets/js/43.2fc9c209.js"><link rel="prefetch" href="/assets/js/44.366bd44e.js"><link rel="prefetch" href="/assets/js/45.9baec45e.js"><link rel="prefetch" href="/assets/js/46.5d5e5cb3.js"><link rel="prefetch" href="/assets/js/48.34232f7f.js"><link rel="prefetch" href="/assets/js/49.269eae44.js"><link rel="prefetch" href="/assets/js/5.b97c8e99.js"><link rel="prefetch" href="/assets/js/50.ddc90ea9.js"><link rel="prefetch" href="/assets/js/51.0d496ebd.js"><link rel="prefetch" href="/assets/js/52.5de4cba2.js"><link rel="prefetch" href="/assets/js/53.291d0b51.js"><link rel="prefetch" href="/assets/js/54.12c976d1.js"><link rel="prefetch" href="/assets/js/55.fcf3c75d.js"><link rel="prefetch" href="/assets/js/6.5fe59aa3.js"><link rel="prefetch" href="/assets/js/7.e4119528.js"><link rel="prefetch" href="/assets/js/8.b36d15bf.js"><link rel="prefetch" href="/assets/js/9.d504111d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.593102d0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">木先生</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/post/" class="nav-link router-link-active">Blog</a></div><div class="nav-item"><a href="/about.html" class="nav-link">About</a></div><div class="nav-item"><a href="/contact.html" class="nav-link">Contact</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/post/" class="nav-link router-link-active">Blog</a></div><div class="nav-item"><a href="/about.html" class="nav-link">About</a></div><div class="nav-item"><a href="/contact.html" class="nav-link">Contact</a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading"><span>Windows</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>TensorFlow</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>Python</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/post/Python/2019-06-20-Python packages.html" class="sidebar-link">Python packages</a></li><li><a href="/post/Python/2019-06-12-清理Python项目中的pyc文件.html" class="sidebar-link">清理Python项目中的pyc文件</a></li><li><a href="/post/Python/2018-08-03-Python函数缓存器functools.lru_cache.html" class="sidebar-link">Python 函数缓存器functools.lru_cache</a></li><li><a href="/post/Python/2018-07-16-pyenv和pipenv管理Python项目环境依赖.html" class="sidebar-link">pyenv &amp; pipenv 管理Python项目环境依赖</a></li><li><a href="/post/Python/2018-06-27-Python脚本demo.html" class="active sidebar-link">Python-Script-Demo</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/post/Python/2018-06-27-Python脚本demo.html#目录" class="sidebar-link">目录</a></li><li class="sidebar-sub-header"><a href="/post/Python/2018-06-27-Python脚本demo.html#python-script-demo-sync" class="sidebar-link">pythonscriptdemo_sync</a></li><li class="sidebar-sub-header"><a href="/post/Python/2018-06-27-Python脚本demo.html#python-script-demo-async" class="sidebar-link">pythonscriptdemo_async</a></li><li class="sidebar-sub-header"><a href="/post/Python/2018-06-27-Python脚本demo.html#启动方式" class="sidebar-link">启动方式</a></li><li class="sidebar-sub-header"><a href="/post/Python/2018-06-27-Python脚本demo.html#renference" class="sidebar-link">Renference</a></li></ul></li><li><a href="/post/Python/2018-06-21-Tornado参考.html" class="sidebar-link">Tornado参考</a></li><li><a href="/post/Python/2018-06-15-Python工具类.html" class="sidebar-link">Python 工具类</a></li><li><a href="/post/Python/2018-05-23-Python-Tornado做API服务时适配XSRF-cookie检查.html" class="sidebar-link">Python Tornado做API服务时适配XSRF cookie检查</a></li><li><a href="/post/Python/2018-05-16-Python获取第二天凌晨时间.html" class="sidebar-link">Python获取第二天凌晨时间</a></li><li><a href="/post/Python/2018-05-07-Python进阶阅读.html" class="sidebar-link">Python进阶阅读</a></li><li><a href="/post/Python/2018-04-09-Python-Tornado后台服务器跨域设置示例.html" class="sidebar-link">Python-Tornado服务器后台跨域设置示例</a></li><li><a href="/post/Python/2018-01-23-Python项目架构的思考.html" class="sidebar-link">Python项目架构的思考</a></li><li><a href="/post/Python/2017-12-14-Python实现定时任务初步探索.html" class="sidebar-link">Python实现定时任务的初步探索</a></li><li><a href="/post/Python/2017-11-24-Python项目生成requirements_txt.html" class="sidebar-link">Python项目生成requirements</a></li><li><a href="/post/Python/2017-01-19-一个Python简单项目框架的建立流程.html" class="sidebar-link">一个Python简单项目框架的建立流程</a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Nginx</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>MySQL</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Mac</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Linux</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Git</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Frontend</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>API</span> <span class="arrow right"></span></p> <!----></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="python-script-demo"><a href="#python-script-demo" aria-hidden="true" class="header-anchor">#</a> Python-Script-Demo</h1> <p>我们编写Python脚本一般会有同步和异步两种方式，
+下面是这两种方式的一种实现。</p> <h2 id="目录"><a href="#目录" aria-hidden="true" class="header-anchor">#</a> 目录</h2> <p></p><div class="table-of-contents"><ul><li><a href="#目录">目录</a></li><li><a href="#python-script-demo-sync">pythonscriptdemo_sync</a></li><li><a href="#python-script-demo-async">pythonscriptdemo_async</a></li><li><a href="#启动方式">启动方式</a></li><li><a href="#renference">Renference</a></li></ul></div><p></p> <h2 id="python-script-demo-sync"><a href="#python-script-demo-sync" aria-hidden="true" class="header-anchor">#</a> python_script_demo_sync</h2> <p>同步脚本</p> <ul><li>python_script_demo_sync.py</li></ul> <div class="language-python extra-class"><pre class="language-python"><code><span class="token comment"># -*- coding: utf-8 -*-</span>
+<span class="token comment"># -*- author: Jiangtao -*-</span>
+
+
+<span class="token keyword">import</span> logging
+<span class="token keyword">import</span> traceback
+
+<span class="token keyword">from</span> time <span class="token keyword">import</span> sleep
+<span class="token keyword">from</span> datetime <span class="token keyword">import</span> datetime
+
+
+<span class="token keyword">class</span> <span class="token class-name">Demo</span><span class="token punctuation">(</span><span class="token builtin">object</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+
+    <span class="token triple-quoted-string string">&quot;&quot;&quot;A demo for python script&quot;&quot;&quot;</span>
+
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">pass</span>
+
+    <span class="token keyword">def</span> <span class="token function">__do_send_async_request</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">&quot;&quot;&quot;function to send async request&quot;&quot;&quot;</span>
+        <span class="token keyword">pass</span>
+        <span class="token keyword">return</span> <span class="token boolean">True</span>
+
+    <span class="token keyword">def</span> <span class="token function">get</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">&quot;&quot;&quot;function for get data&quot;&quot;&quot;</span>
+        self<span class="token punctuation">.</span>__do_send_async_request<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">pass</span>
+        <span class="token keyword">print</span> <span class="token string">'get data complete.'</span>
+        <span class="token keyword">return</span> <span class="token boolean">True</span>
+
+    <span class="token keyword">def</span> <span class="token function">set</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">&quot;&quot;&quot;function for set data&quot;&quot;&quot;</span>
+        <span class="token keyword">pass</span>
+        <span class="token keyword">print</span> <span class="token string">'set data complete.'</span>
+
+    <span class="token keyword">def</span> <span class="token function">run</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">&quot;&quot;&quot;the only entry function to run this demo&quot;&quot;&quot;</span>
+        self<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span><span class="token builtin">set</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+
+<span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">&quot;&quot;&quot;entry function to start this script&quot;&quot;&quot;</span>
+    demo <span class="token operator">=</span> Demo<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">while</span> <span class="token number">1</span><span class="token punctuation">:</span>
+        <span class="token keyword">try</span><span class="token punctuation">:</span>
+            logging<span class="token punctuation">.</span>info<span class="token punctuation">(</span><span class="token string">'start@%s'</span> <span class="token operator">%</span> datetime<span class="token punctuation">.</span>now<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            demo<span class="token punctuation">.</span>run<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            logging<span class="token punctuation">.</span>info<span class="token punctuation">(</span><span class="token string">'end@%s'</span> <span class="token operator">%</span> datetime<span class="token punctuation">.</span>now<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token keyword">except</span> Exception<span class="token punctuation">,</span> e<span class="token punctuation">:</span>
+            logging<span class="token punctuation">.</span>info<span class="token punctuation">(</span>traceback<span class="token punctuation">.</span>format_exc<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            sleep<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+        <span class="token keyword">finally</span><span class="token punctuation">:</span>
+            sleep<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span>
+
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">&quot;__main__&quot;</span><span class="token punctuation">:</span>
+    logging<span class="token punctuation">.</span>basicConfig<span class="token punctuation">(</span>level<span class="token operator">=</span>logging<span class="token punctuation">.</span>INFO<span class="token punctuation">)</span>
+    <span class="token keyword">try</span><span class="token punctuation">:</span>
+        main<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">except</span> KeyboardInterrupt<span class="token punctuation">,</span> e<span class="token punctuation">:</span>
+        logging<span class="token punctuation">.</span>info<span class="token punctuation">(</span><span class="token string">&quot;KeyboardInterrupt&quot;</span><span class="token punctuation">)</span>
+    <span class="token keyword">except</span> Exception<span class="token punctuation">,</span> e<span class="token punctuation">:</span>
+        logging<span class="token punctuation">.</span>info<span class="token punctuation">(</span>traceback<span class="token punctuation">.</span>format_exc<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        sleep<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+
+</code></pre></div><h2 id="python-script-demo-async"><a href="#python-script-demo-async" aria-hidden="true" class="header-anchor">#</a> python_script_demo_async</h2> <p>异步脚本</p> <ul><li>python_script_demo_async.py</li></ul> <div class="language-python extra-class"><pre class="language-python"><code><span class="token comment"># -*- coding: utf-8 -*-</span>
+<span class="token comment"># -*- author: Jiangtao -*-</span>
+
+
+<span class="token keyword">import</span> logging
+<span class="token keyword">import</span> traceback
+<span class="token keyword">import</span> tornado
+
+<span class="token keyword">from</span> time <span class="token keyword">import</span> sleep
+<span class="token keyword">from</span> datetime <span class="token keyword">import</span> datetime
+
+<span class="token keyword">from</span> tornado <span class="token keyword">import</span> ioloop
+<span class="token keyword">from</span> tornado <span class="token keyword">import</span> gen
+
+
+<span class="token keyword">class</span> <span class="token class-name">Demo</span><span class="token punctuation">(</span><span class="token builtin">object</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+
+    <span class="token triple-quoted-string string">&quot;&quot;&quot;A demo for python script&quot;&quot;&quot;</span>
+
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">pass</span>
+
+    @gen<span class="token punctuation">.</span>coroutine
+    <span class="token keyword">def</span> <span class="token function">__do_send_sync_request</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">&quot;&quot;&quot;function to send sync request&quot;&quot;&quot;</span>
+        <span class="token keyword">pass</span>
+        gen<span class="token punctuation">.</span>Return<span class="token punctuation">(</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+
+    @gen<span class="token punctuation">.</span>coroutine
+    <span class="token keyword">def</span> <span class="token function">get</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">&quot;&quot;&quot;function for get data&quot;&quot;&quot;</span>
+        <span class="token keyword">yield</span> self<span class="token punctuation">.</span>__do_send_sync_request<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">pass</span>
+        <span class="token keyword">print</span> <span class="token string">'get data complete.'</span>
+        gen<span class="token punctuation">.</span>Return<span class="token punctuation">(</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">def</span> <span class="token function">set</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">&quot;&quot;&quot;function for set data&quot;&quot;&quot;</span>
+        <span class="token keyword">pass</span>
+        <span class="token keyword">print</span> <span class="token string">'set data complete.'</span>
+
+    @gen<span class="token punctuation">.</span>coroutine
+    <span class="token keyword">def</span> <span class="token function">run</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">&quot;&quot;&quot;the only entry function to run this demo&quot;&quot;&quot;</span>
+        <span class="token keyword">yield</span> self<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span><span class="token builtin">set</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+
+@gen<span class="token punctuation">.</span>coroutine
+<span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">&quot;&quot;&quot;entry function to start this script&quot;&quot;&quot;</span>
+    demo <span class="token operator">=</span> Demo<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">while</span> <span class="token number">1</span><span class="token punctuation">:</span>
+        <span class="token keyword">try</span><span class="token punctuation">:</span>
+            logging<span class="token punctuation">.</span>info<span class="token punctuation">(</span><span class="token string">'start@%s'</span> <span class="token operator">%</span> datetime<span class="token punctuation">.</span>now<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token keyword">yield</span> demo<span class="token punctuation">.</span>run<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            logging<span class="token punctuation">.</span>info<span class="token punctuation">(</span><span class="token string">'end@%s'</span> <span class="token operator">%</span> datetime<span class="token punctuation">.</span>now<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token keyword">except</span> Exception<span class="token punctuation">,</span> e<span class="token punctuation">:</span>
+            logging<span class="token punctuation">.</span>info<span class="token punctuation">(</span>traceback<span class="token punctuation">.</span>format_exc<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            sleep<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+        <span class="token keyword">finally</span><span class="token punctuation">:</span>
+            sleep<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span>
+
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">&quot;__main__&quot;</span><span class="token punctuation">:</span>
+    logging<span class="token punctuation">.</span>basicConfig<span class="token punctuation">(</span>level<span class="token operator">=</span>logging<span class="token punctuation">.</span>INFO<span class="token punctuation">)</span>
+    <span class="token keyword">try</span><span class="token punctuation">:</span>
+        tornado<span class="token punctuation">.</span>ioloop<span class="token punctuation">.</span>IOLoop<span class="token punctuation">.</span>instance<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>run_sync<span class="token punctuation">(</span>main<span class="token punctuation">)</span>
+    <span class="token keyword">except</span> KeyboardInterrupt<span class="token punctuation">,</span> e<span class="token punctuation">:</span>
+        logging<span class="token punctuation">.</span>info<span class="token punctuation">(</span><span class="token string">&quot;KeyboardInterrupt&quot;</span><span class="token punctuation">)</span>
+    <span class="token keyword">except</span> Exception<span class="token punctuation">,</span> e<span class="token punctuation">:</span>
+        logging<span class="token punctuation">.</span>info<span class="token punctuation">(</span>traceback<span class="token punctuation">.</span>format_exc<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        sleep<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+
+</code></pre></div><h2 id="启动方式"><a href="#启动方式" aria-hidden="true" class="header-anchor">#</a> 启动方式</h2> <div class="language-bash extra-class"><pre class="language-bash"><code>$ python python_script_demo_sync.py
+$ python python_script_demo_async.py
+</code></pre></div><h2 id="renference"><a href="#renference" aria-hidden="true" class="header-anchor">#</a> Renference</h2> <ul><li><a href="http://www.tornadoweb.org/en/stable/ioloop.html#tornado.ioloop.IOLoop.run_sync" target="_blank" rel="noopener noreferrer">Tornado Web Server - Docs of Tornado<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="http://tornado-zh-cn.readthedocs.io/zh_CN/latest/ioloop.html#tornado.ioloop.IOLoop.run_sync" target="_blank" rel="noopener noreferrer">Tornado Web 服务器 - 官方中文文档<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div> <div class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">9/20/2018, 5:17:32 PM</span></div></div> <!----> </div> <!----></div></div>
+    <script src="/assets/js/app.9c3b2f40.js" defer></script><script src="/assets/js/47.474d0da3.js" defer></script>
+  </body>
+</html>
