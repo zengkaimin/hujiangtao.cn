@@ -7,7 +7,7 @@
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "deploy": "./deploy.sh"
+    "deploy": "./deploy_h5.sh"
   },
   "dependencies": {
     "npm": "^6.1.0",

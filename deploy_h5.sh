@@ -11,13 +11,13 @@ npm run docs:build
 cd docs/.vuepress/dist
 
 # 如果是发布到自定义域名
-echo 'www.hujiangtao.cn' > CNAME
+# echo 'www.hujiangtao.cn' > CNAME
 
-git init
-git config user.name jiangtao
-git config user.email jiangtao.work@gmail.com
-git add -A
-git commit -m 'deploy'
+# git init
+# git config user.name jiangtao
+# git config user.email jiangtao.work@gmail.com
+# git add -A
+# git commit -m 'deploy'
 
 # 如果发布到 https://<USERNAME>.github.io
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
@@ -29,9 +29,9 @@ git commit -m 'deploy'
 # git push -f git@github.com:hustjiangtao/vuepress.git master:gh-pages
 
 # 如果发布到 https://github.com/hustjiangtao/hujiangtao.cn.git
-git push -f git@github.com:hustjiangtao/hujiangtao.cn.git master:gh-pages
+# git push -f git@github.com:hustjiangtao/hujiangtao.cn.git master:gh-pages
 
 # 发布到tengxun cloud
-# scp -r ../dist tengxun:/var/www/web/www.hujiangtao.cn
+scp -r ../dist tengxun:/var/www/web/www.hujiangtao.cn
 
 cd -
