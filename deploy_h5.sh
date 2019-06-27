@@ -32,6 +32,7 @@ cd docs/.vuepress/dist
 # git push -f git@github.com:hustjiangtao/hujiangtao.cn.git master:gh-pages
 
 # 发布到tengxun cloud
-scp -r ../dist tengxun:/var/www/web/www.hujiangtao.cn
+# scp -r ../dist/* tengxun:/var/www/web/www.hujiangtao.cn/
+rsync -avz ../dist/ tengxun:/var/www/web/www.hujiangtao.cn
 
 cd -
