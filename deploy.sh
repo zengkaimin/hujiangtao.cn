@@ -31,4 +31,7 @@ git commit -m 'deploy'
 # 如果发布到 https://github.com/hustjiangtao/hujiangtao.cn.git
 git push -f git@github.com:hustjiangtao/hujiangtao.cn.git master:gh-pages
 
+# 发布到tengxun cloud
+scp -r ../dist tengxun:/var/www/web/www.hujiangtao.cn
+
 cd -
