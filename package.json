@@ -6,9 +6,9 @@
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
+    "docs:build": "vuepress build docs && yarn sitemap",
     "deploy": "./deploy_h5.sh",
-    "sitemap": "vuepress build docs && vuepress-sitemap -H https://www.hujiangtao.cn -d docs/.vuepress/dist"
+    "sitemap": "vuepress-sitemap -H https://www.hujiangtao.cn -d docs/.vuepress/dist"
   },
   "dependencies": {
     "npm": "^6.1.0",
