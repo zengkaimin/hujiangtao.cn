@@ -7,10 +7,12 @@
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "deploy": "./deploy_h5.sh"
+    "deploy": "./deploy_h5.sh",
+    "sitemap": "vuepress build docs && vuepress-sitemap -H https://www.hujiangtao.cn -d docs/.vuepress/dist"
   },
   "dependencies": {
     "npm": "^6.1.0",
+    "vuepress-plugin-sitemap": "1.1.1",
     "webpack": "^4.27.1"
   }
 }
