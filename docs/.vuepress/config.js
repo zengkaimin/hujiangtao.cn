@@ -44,10 +44,12 @@ module.exports = {
 
     locales: {
         '/': {
-            lang: 'en-US',
+            // lang: 'en-US',
+            lang: 'zh-CN',
             // title: 'Jiangtao',
             title: '木先生',
-            description: 'Keep Calm and Carry On'
+            // description: 'Keep Calm and Carry On',
+            description: '规则之内，无不可走之路'
         },
         // '/zh/': {
         //     lang: 'zh-CN',
