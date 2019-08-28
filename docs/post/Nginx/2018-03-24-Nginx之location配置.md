@@ -405,3 +405,17 @@ server {
     access_log off;
 }
 ```
+
+- Nginx 状态监控页面
+
+```conf
+server {
+    listen  80;
+    server_name  nginx-status.demo.com;
+
+    location / {
+        stub_status on;
+        access_log   off;
+    }
+}
+```
