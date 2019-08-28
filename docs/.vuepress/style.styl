@@ -1,18 +1,29 @@
 // sidebar
-.sidebar {
+//@media (min-width: $MQNarrow) {
+@media (min-width: 959px) {
+  .sidebar {
     transition: max-width 0.5s, box-shadow 0.5s;
-    max-width: $sidebarWidth;
-    min-width: $sidebarWidth;
+    //max-width: $sidebarWidth;
+    //min-width: $sidebarWidth;
+    max-width: 20rem;
+    min-width: 20rem;
     width: auto !important;
-}
+  }
 
-.sidebar {
+  .sidebar-link {
+    display: block !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .sidebar {
     white-space: nowrap;
-}
+  }
 
-.sidebar:hover {
+  .sidebar:hover {
     max-width: 50vw;
     box-shadow: 1px 0px 10px 5px #eaecef;
+  }
 }
 
 // dl - Inspired by Jason Yu
@@ -27,7 +38,8 @@ dl {
   line-height: 1.7;
 }
 
-@media (min-width: $MQMobile) {
+//@media (min-width: $MQMobile) {
+@media (min-width: 719px) {
   dl {
     grid-template-columns: min-content 1fr;
   }
@@ -52,4 +64,8 @@ dd p:last-of-type {
 
 dd ul {
   margin: 0;
+}
+
+.home .hero img {
+  border-radius: 50%;
 }
