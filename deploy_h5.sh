@@ -33,6 +33,16 @@ cd docs/.vuepress/dist
 
 # 发布到tengxun cloud
 # scp -r ../dist/* tengxun:/var/www/web/www.hujiangtao.cn/
-rsync -avz ../dist/ tengxun:/var/www/web/www.hujiangtao.cn
+#rsync -avz ../dist/ tengxun:/var/www/web/www.hujiangtao.cn
+
+# 发布到upyun cloud storage
+find . -name '*.DS_Store' | xargs rm
+echo "---清理DS_Store完毕---"
+~/x-tools/upx switch f-www-hujiangtao-cn
+~/x-tools/upx sync ../dist / --delete
+echo "---同步完毕---"
 
 cd -
+
+# backup for dist files
+./backup.sh
