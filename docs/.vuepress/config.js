@@ -88,6 +88,10 @@ module.exports = {
                         link: '/post/'
                     },
                     {
+                        text: 'Gist',
+                        link: '/gist/'
+                    },
+                    {
                         text: 'About',
                         link: '/about'
                     },
@@ -99,6 +103,9 @@ module.exports = {
                 sidebar: {
                     '/post/': [
                         ...generateBlogSideBar('/post'),
+                        ],
+                    '/gist/': [
+                        ...generateBlogSideBar('/gist'),
                         ],
                 },
                 // search: false,
