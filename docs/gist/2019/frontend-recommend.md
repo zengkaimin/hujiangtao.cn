@@ -8,6 +8,12 @@ description: 2019年前端个人开发技术栈推荐
 
 [[toc]]
 
+## 个人技术选型
+
+- Vue
+- tailwindcss
+- Vuetify
+
 ## JS
 
 - [React](https://reactjs.org/)
@@ -27,3 +33,7 @@ description: 2019年前端个人开发技术栈推荐
 - [tailwindcss](https://tailwindcss.com/)
 
 个人推荐/后续准备使用
+
+- [Vuetify](https://vuetifyjs.com)
+
+Material Design component framework for Vue.js
