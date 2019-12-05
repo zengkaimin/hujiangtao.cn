@@ -1,18 +1,20 @@
 {
   "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.0.0-rc.1",
+    "@vuepress/plugin-google-analytics": "^1.2.0",
+    "@vuepress/plugin-pwa": "^1.0.0-rc.1",
     "markdown-it-deflist": "^2.0.3",
     "markdown-it-task-lists": "^2.1.1",
-    "vuepress": "^0.14.8"
+    "vuepress": "^1.2.0",
+    "vuepress-plugin-sitemap": "^2.3.1"
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs && yarn sitemap",
-    "deploy": "./deploy_h5.sh",
-    "sitemap": "vuepress-sitemap -H https://www.hujiangtao.cn -d docs/.vuepress/dist"
+    "docs:build": "vuepress build docs",
+    "deploy": "./deploy_h5.sh"
   },
   "dependencies": {
     "npm": "^6.1.0",
-    "vuepress-plugin-sitemap": "1.1.1",
     "webpack": "^4.27.1"
   }
 }

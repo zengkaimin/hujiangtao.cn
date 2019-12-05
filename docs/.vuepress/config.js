@@ -39,8 +39,8 @@ module.exports = {
     // base: '/vuepress/',
     // port: 8888,
     evergreen: true,
-    serviceWorker: false,
-    ga: 'UA-123873826-1',
+    // serviceWorker: false,
+    // ga: 'UA-123873826-1',
 
     locales: {
         '/': {
@@ -72,6 +72,7 @@ module.exports = {
         // repo: 'hustjiangtao/vuepress',
         // editLinks: true,
         // docsDir: 'docs',
+        logo: 'https://static.hujiangtao.cn/image/2019/06/logo.jpg',
         locales: {
             '/': {
                 label: 'English',
@@ -151,9 +152,39 @@ module.exports = {
         //     updatePopup: true,  // refresh button when serviceWorker
         // },
     },
+    // markdown: {
+    //     // lineNumbers: true,
+    //     config: md => {
+    //         md.use(require('markdown-it-deflist'))
+    //           .use(require('markdown-it-task-lists'))
+    //     }
+    // },
+    plugins: {
+        '@vuepress/google-analytics': {
+            ga: 'UA-12345678-9'
+        },
+        '@vuepress/pwa': {
+            serviceWorker: false
+        },
+        '@vuepress/back-to-top': true,
+        'sitemap': {
+            hostname: 'https://www.hujiangtao.cn',
+            exclude: [
+                '/404.html',
+                '/about.html',
+                '/contact.html',
+                '/zh/about.html',
+                '/zh/contact.html',
+            ]
+        },
+        '@vuepress/last-updated': {
+            transformer: (timestamp, lang) => {
+                return new Date(timestamp).toLocaleString(lang, {hourCycle: 'h24'})
+            }
+        },
+    },
     markdown: {
-        // lineNumbers: true,
-        config: md => {
+        extendMarkdown: md => {
             md.use(require('markdown-it-deflist'))
               .use(require('markdown-it-task-lists'))
         }
