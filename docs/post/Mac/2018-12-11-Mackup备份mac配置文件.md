@@ -2,6 +2,7 @@
 title: Mackup备份mac配置文件
 date: 2018-12-11
 description: 使用Mackup工具备份mac系统的配置文件
+permalink: /:regular
 ---
 
 # Mackup备份mac配置文件

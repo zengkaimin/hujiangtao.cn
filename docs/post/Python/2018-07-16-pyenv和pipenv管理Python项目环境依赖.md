@@ -3,6 +3,7 @@ title: pyenv & pipenv 管理Python项目环境依赖
 author: Jiangtao
 date: 2018-07-16
 description: pyenv & pipenv 管理Python项目环境依赖
+permalink: /:regular
 ---
 
 <!--# 简介

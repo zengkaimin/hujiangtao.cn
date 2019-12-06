@@ -41,6 +41,7 @@ module.exports = {
     evergreen: true,
     // serviceWorker: false,
     // ga: 'UA-123873826-1',
+    permalink: "/:year/:month/:slug",
 
     locales: {
         '/': {
@@ -171,10 +172,16 @@ module.exports = {
             hostname: 'https://www.hujiangtao.cn',
             exclude: [
                 '/404.html',
+                '/404/',
+                '/1970/01/_404/',
                 '/about.html',
+                '/about/',
                 '/contact.html',
+                '/contact/',
                 '/zh/about.html',
+                '/zh/about/',
                 '/zh/contact.html',
+                '/zh/contact/',
             ]
         },
         '@vuepress/last-updated': {

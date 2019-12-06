@@ -2,6 +2,7 @@
 title: Python-Tornado服务器后台跨域设置示例
 date: 2018-04-09
 description: Python-Tornado服务器后台跨域设置示例|Python Tornado CSRF|CORS|cross domain|跨域
+permalink: /:regular
 ---
 
 # Python-Tornado服务器后台跨域设置示例

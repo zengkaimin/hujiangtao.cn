@@ -2,6 +2,7 @@
 title: Python项目生成requirements
 date: 2017-11-24
 description: Python项目生成requirements
+permalink: /:regular
 ---
 
 # Python项目生成requirements.txt

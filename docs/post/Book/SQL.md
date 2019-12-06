@@ -3,6 +3,7 @@ title: SQL books
 author: Jiangtao
 date: 2019-06-27
 description: SQL books
+permalink: /:regular
 ---
 
 <!--# 简介

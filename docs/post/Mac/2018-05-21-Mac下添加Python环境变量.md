@@ -2,6 +2,7 @@
 title: Mac下添加Python环境变量
 date: 2018-05-21
 description: Mac下添加Python的系统环境变量
+permalink: /:regular
 ---
 
 # Mac下添加Python环境变量

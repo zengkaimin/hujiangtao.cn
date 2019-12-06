@@ -1,5 +1,6 @@
 ---
 sidebar: no
+permalink: /:slug
 ---
 
 # 🤟 Contact Me

@@ -2,6 +2,7 @@
 title: Gist
 date: 2019-11-13
 description: Gist
+permalink: /:slug
 ---
 
 # Gist

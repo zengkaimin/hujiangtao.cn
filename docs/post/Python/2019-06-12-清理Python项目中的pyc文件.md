@@ -3,6 +3,7 @@ title: 清理Python项目中的pyc文件
 author: Jiangtao
 date: 2019-06-12
 description: 清理Python项目中的pyc文件和__pycache__目录
+permalink: /:regular
 ---
 
 <!--# 简介

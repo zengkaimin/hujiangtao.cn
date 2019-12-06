@@ -2,6 +2,7 @@
 title: Centos用户管理
 date: 2017-12-05
 description: linux系统下ssh配置方式
+permalink: /:regular
 ---
 
 # Centos 用户管理

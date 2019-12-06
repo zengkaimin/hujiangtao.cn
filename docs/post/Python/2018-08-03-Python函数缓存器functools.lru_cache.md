@@ -3,6 +3,7 @@ title: Python 函数缓存器functools.lru_cache
 author: Jiangtao
 date: 2018-08-03
 description: Python 函数缓存器functools.lru_cache
+permalink: /:regular
 ---
 
 <!--# 简介

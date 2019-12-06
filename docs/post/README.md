@@ -2,6 +2,7 @@
 title: Blog Index
 date: 2018-04-26
 description: 文章的简介
+permalink: /:slug
 ---
 
 # 简介

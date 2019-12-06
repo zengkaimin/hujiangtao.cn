@@ -1,5 +1,6 @@
 ---
 sidebar: no
+permalink: /:slug
 ---
 
 # :point_right: About Me

@@ -2,6 +2,7 @@
 title: Nginx 之静态文件配置及 alias 使用
 date: 2018-07-09
 description: Nginx 之静态文件配置， 以及 root & alias 使用
+permalink: /:regular
 ---
 
 # Nginx 之静态文件配置及 alias 使用

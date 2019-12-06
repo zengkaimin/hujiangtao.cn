@@ -2,6 +2,7 @@
 title: Python Tornado做API服务时适配XSRF cookie检查
 date: 2018-05-23
 description: Python的Tornado框架做API服务供Ajax请求时适配XSRF cookie检查
+permalink: /:regular
 ---
 
 # Python Tornado做API服务时适配XSRF cookie检查

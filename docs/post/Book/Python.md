@@ -3,6 +3,7 @@ title: Python books
 author: Jiangtao
 date: 2019-06-27
 description: Python books
+permalink: /:regular
 ---
 
 <!--# 简介
