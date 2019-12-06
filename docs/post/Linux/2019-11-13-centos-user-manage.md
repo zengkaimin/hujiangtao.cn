@@ -46,6 +46,8 @@ root    ALL=(ALL)       ALL
 + test    ALL=(ALL)       ALL
 ```
 
+使用帐号 `test` 登录，然后用命令 sudo su - ，即可获得root权限进行操作
+
 ## ssh管理
 
 - 生成sshkey
